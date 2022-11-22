@@ -1,0 +1,73 @@
+<footer class="footer spad">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-6 col-sm-6">
+				<div class="footer__about">
+					<div class="footer__about__logo">
+						<a href="./index.php"><img src="img/logo.png" alt=""></a>
+					</div>
+					<ul>
+						<li>Adresse : Yamoussoukro, INPHB Centre</li>
+						<li>Téléphone : +12 34 56 789</li>
+						<li>Email : contact@webmaster.com</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+				<div class="footer__widget">
+					<h6>Liens utiles</h6>
+					<ul>
+						<li><a href="#">Historique</a></li>
+						<li><a href="#">Organisation</a></li>
+						<li><a href="#">Nos engagements</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">Nos magasins en gros</a></li>
+						<li><a href="#">Nos magasins en demi-gros</a></li>
+						<li><a href="#">Nos magasins en détails</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">Produits</a></li>
+						<li><a href="#">Livraisons</a></li>
+						<li><a href="#">Promotions</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">Presse</a></li>
+						<li><a href="#">Multimédia</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">Ressources Humaines</a></li>
+						<li><a href="#">Service Commercial</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="footer__copyright">
+					<div class="footer__copyright__text">
+						<p>
+							Copyright &copy;
+							<script>
+								document.write(new Date().getFullYear());
+							</script> Tous droits réservés | ING INFO 3
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script src="js/mixitup.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
