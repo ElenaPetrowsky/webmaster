@@ -8,7 +8,7 @@
 				<div class="hero__categories">
 					<div class="hero__categories__all">
 						<i class="fa fa-bars"></i>
-						<span>All departments</span>
+						<span>Catégories</span>
 					</div>
 					<ul>
 						<li><a href="#">Fresh Meat</a></li>
@@ -25,22 +25,16 @@
 				<div class="hero__search">
 					<div class="hero__search__form">
 						<form action="#">
-							<div class="hero__search__categories">
-								Toutes catégories
-								<span class="arrow_carrot-down"></span>
-							</div>
 							<input type="text" placeholder="Que voulez-vous ?">
 							<button type="submit" class="site-btn">RECHERCHER</button>
 						</form>
 					</div>
-					<div class="hero__search__phone">
-						<div class="hero__search__phone__icon">
-							<i class="fa fa-phone"></i>
-						</div>
-						<div class="hero__search__phone__text">
-							<h5>+65 11.188.888</h5>
-							<span>support 24/7 time</span>
-						</div>
+					<div class="header__cart">
+						<ul>
+							<li><a href="./favoris.php"><i class="fa fa-heart"></i> <span>1</span></a></li>
+							<li><a href="./panier.php"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+						</ul>
+						<div class="header__cart__price">Total : <span>150 FCFA</span></div>
 					</div>
 				</div>
 			</div>
@@ -80,9 +74,9 @@
 						</form>
 					</div>
 					<div class="actualite__sidebar__item">
-						<h4>Categories</h4>
+						<h4>Catégories</h4>
 						<ul>
-							<li><a href="#">All</a></li>
+							<li><a href="#">Tous</a></li>
 							<li><a href="#">Beauty (20)</a></li>
 							<li><a href="#">Food (5)</a></li>
 							<li><a href="#">Life Style (9)</a></li>
@@ -90,7 +84,7 @@
 						</ul>
 					</div>
 					<div class="actualite__sidebar__item">
-						<h4>Recent News</h4>
+						<h4>Les pépites</h4>
 						<div class="actualite__sidebar__recent">
 							<a href="#" class="actualite__sidebar__recent__item">
 								<div class="actualite__sidebar__recent__item__pic">
@@ -121,17 +115,6 @@
 							</a>
 						</div>
 					</div>
-					<div class="actualite__sidebar__item">
-						<h4>Search By</h4>
-						<div class="actualite__sidebar__item__tags">
-							<a href="#">Apple</a>
-							<a href="#">Beauty</a>
-							<a href="#">Vegetables</a>
-							<a href="#">Fruit</a>
-							<a href="#">Healthy Food</a>
-							<a href="#">Lifestyle</a>
-						</div>
-					</div>
 				</div>
 			</div>
 			<div class="col-lg-8 col-md-7">
@@ -146,10 +129,10 @@
 									<li><i class="fa fa-calendar-o"></i> May 4,2019</li>
 									<li><i class="fa fa-comment-o"></i> 5</li>
 								</ul>
-								<h5><a href="#">6 ways to prepare breakfast for 30</a></h5>
+								<h5><a href="./actualite-details.php">6 ways to prepare breakfast for 30</a></h5>
 								<p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam
 									quaerat </p>
-								<a href="#" class="actualite__btn">READ MORE <span class="arrow_right"></span></a>
+								<a href="./actualite-details.php" class="actualite__btn">LIRE PLUS<span class="arrow_right"></span></a>
 							</div>
 						</div>
 					</div>
@@ -163,10 +146,10 @@
 									<li><i class="fa fa-calendar-o"></i> May 4,2019</li>
 									<li><i class="fa fa-comment-o"></i> 5</li>
 								</ul>
-								<h5><a href="#">Visit the clean farm in the US</a></h5>
+								<h5><a href="./actualite-details.php">Visit the clean farm in the US</a></h5>
 								<p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam
 									quaerat </p>
-								<a href="#" class="actualite__btn">READ MORE <span class="arrow_right"></span></a>
+								<a href="./actualite-details.php" class="actualite__btn">LIRE PLUS<span class="arrow_right"></span></a>
 							</div>
 						</div>
 					</div>
@@ -180,10 +163,10 @@
 									<li><i class="fa fa-calendar-o"></i> May 4,2019</li>
 									<li><i class="fa fa-comment-o"></i> 5</li>
 								</ul>
-								<h5><a href="#">Cooking tips make cooking simple</a></h5>
+								<h5><a href="./actualite-details.php">Cooking tips make cooking simple</a></h5>
 								<p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam
 									quaerat </p>
-								<a href="#" class="actualite__btn">READ MORE <span class="arrow_right"></span></a>
+								<a href="./actualite-details.php" class="actualite__btn">LIRE PLUS<span class="arrow_right"></span></a>
 							</div>
 						</div>
 					</div>
@@ -197,44 +180,10 @@
 									<li><i class="fa fa-calendar-o"></i> May 4,2019</li>
 									<li><i class="fa fa-comment-o"></i> 5</li>
 								</ul>
-								<h5><a href="#">Cooking tips make cooking simple</a></h5>
+								<h5><a href="./actualite-details.php">Cooking tips make cooking simple</a></h5>
 								<p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam
 									quaerat </p>
-								<a href="#" class="actualite__btn">READ MORE <span class="arrow_right"></span></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-6 col-sm-6">
-						<div class="actualite__item">
-							<div class="actualite__item__pic">
-								<img src="img/actualite/actualite-4.jpg" alt="">
-							</div>
-							<div class="actualite__item__text">
-								<ul>
-									<li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-									<li><i class="fa fa-comment-o"></i> 5</li>
-								</ul>
-								<h5><a href="#">The Moment You Need To Remove Garlic From The Menu</a></h5>
-								<p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam
-									quaerat </p>
-								<a href="#" class="actualite__btn">READ MORE <span class="arrow_right"></span></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-6 col-sm-6">
-						<div class="actualite__item">
-							<div class="actualite__item__pic">
-								<img src="img/actualite/actualite-6.jpg" alt="">
-							</div>
-							<div class="actualite__item__text">
-								<ul>
-									<li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-									<li><i class="fa fa-comment-o"></i> 5</li>
-								</ul>
-								<h5><a href="#">Cooking tips make cooking simple</a></h5>
-								<p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam
-									quaerat </p>
-								<a href="#" class="actualite__btn">READ MORE <span class="arrow_right"></span></a>
+								<a href="./actualite-details.php" class="actualite__btn">LIRE PLUS<span class="arrow_right"></span></a>
 							</div>
 						</div>
 					</div>

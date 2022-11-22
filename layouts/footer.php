@@ -17,14 +17,14 @@
 				<div class="footer__widget">
 					<h6>Liens utiles</h6>
 					<ul>
-						<li><a href="#">Historique</a></li>
-						<li><a href="#">Organisation</a></li>
-						<li><a href="#">Nos engagements</a></li>
+						<li><a href="./about.php#historique">Historique</a></li>
+						<li><a href="./about.php#organisation">Organisation</a></li>
+						<li><a href="./about.php#engagements">Nos engagements</a></li>
 					</ul>
 					<ul>
-						<li><a href="#">Nos magasins en gros</a></li>
-						<li><a href="#">Nos magasins en demi-gros</a></li>
-						<li><a href="#">Nos magasins en détails</a></li>
+						<li><a href="./magasins#gros">Nos magasins en gros</a></li>
+						<li><a href="./magasins#demi-gros">Nos magasins en demi-gros</a></li>
+						<li><a href="./magasins#details">Nos magasins en détails</a></li>
 					</ul>
 					<ul>
 						<li><a href="./offres.php">Produits</a></li>

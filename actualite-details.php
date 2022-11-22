@@ -8,7 +8,7 @@
 				<div class="hero__categories">
 					<div class="hero__categories__all">
 						<i class="fa fa-bars"></i>
-						<span>All departments</span>
+						<span>Catégories</span>
 					</div>
 					<ul>
 						<li><a href="#">Fresh Meat</a></li>
@@ -17,11 +17,6 @@
 						<li><a href="#">Fresh Berries</a></li>
 						<li><a href="#">Ocean Foods</a></li>
 						<li><a href="#">Butter & Eggs</a></li>
-						<li><a href="#">Fastfood</a></li>
-						<li><a href="#">Fresh Onion</a></li>
-						<li><a href="#">Papayaya & Crisps</a></li>
-						<li><a href="#">Oatmeal</a></li>
-						<li><a href="#">Fresh Bananas</a></li>
 					</ul>
 				</div>
 			</div>
@@ -29,22 +24,16 @@
 				<div class="hero__search">
 					<div class="hero__search__form">
 						<form action="#">
-							<div class="hero__search__categories">
-								Toutes catégories
-								<span class="arrow_carrot-down"></span>
-							</div>
 							<input type="text" placeholder="Que voulez-vous ?">
 							<button type="submit" class="site-btn">RECHERCHER</button>
 						</form>
 					</div>
-					<div class="hero__search__phone">
-						<div class="hero__search__phone__icon">
-							<i class="fa fa-phone"></i>
-						</div>
-						<div class="hero__search__phone__text">
-							<h5>+65 11.188.888</h5>
-							<span>support 24/7 time</span>
-						</div>
+					<div class="header__cart">
+						<ul>
+							<li><a href="./favoris.php"><i class="fa fa-heart"></i> <span>1</span></a></li>
+							<li><a href="./panier.php"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+						</ul>
+						<div class="header__cart__price">Total : <span>150 FCFA</span></div>
 					</div>
 				</div>
 			</div>

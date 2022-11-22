@@ -24,10 +24,6 @@
 				<div class="hero__search">
 					<div class="hero__search__form">
 						<form action="#">
-							<div class="hero__search__categories">
-								Toutes catégories
-								<span class="arrow_carrot-down"></span>
-							</div>
 							<input type="text" placeholder="Que voulez-vous">
 							<button type="submit" class="site-btn">RECHERCHER</button>
 						</form>
@@ -57,6 +53,13 @@
 <!-- Categories Section Begin -->
 <section class="categories">
 	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="section-title from-actualite__title">
+					<h2>Catégories</h2>
+				</div>
+			</div>
+		</div>
 		<div class="row">
 			<div class="categories__slider owl-carousel">
 				<div class="col-lg-3">
@@ -96,7 +99,7 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="section-title">
-					<h2>Featured Product</h2>
+					<h2>Nos produits</h2>
 				</div>
 				<div class="featured__controls">
 					<ul>
@@ -115,7 +118,6 @@
 					<div class="featured__item__pic set-bg" data-setbg="img/featured/feature-1.jpg">
 						<ul class="featured__item__pic__hover">
 							<li><a href="#"><i class="fa fa-heart"></i></a></li>
-							<li><a href="#"><i class="fa fa-retweet"></i></a></li>
 							<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
 						</ul>
 					</div>
@@ -130,7 +132,6 @@
 					<div class="featured__item__pic set-bg" data-setbg="img/featured/feature-2.jpg">
 						<ul class="featured__item__pic__hover">
 							<li><a href="#"><i class="fa fa-heart"></i></a></li>
-							<li><a href="#"><i class="fa fa-retweet"></i></a></li>
 							<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
 						</ul>
 					</div>
@@ -145,7 +146,6 @@
 					<div class="featured__item__pic set-bg" data-setbg="img/featured/feature-3.jpg">
 						<ul class="featured__item__pic__hover">
 							<li><a href="#"><i class="fa fa-heart"></i></a></li>
-							<li><a href="#"><i class="fa fa-retweet"></i></a></li>
 							<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
 						</ul>
 					</div>
@@ -160,7 +160,6 @@
 					<div class="featured__item__pic set-bg" data-setbg="img/featured/feature-4.jpg">
 						<ul class="featured__item__pic__hover">
 							<li><a href="#"><i class="fa fa-heart"></i></a></li>
-							<li><a href="#"><i class="fa fa-retweet"></i></a></li>
 							<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
 						</ul>
 					</div>
@@ -175,7 +174,6 @@
 					<div class="featured__item__pic set-bg" data-setbg="img/featured/feature-5.jpg">
 						<ul class="featured__item__pic__hover">
 							<li><a href="#"><i class="fa fa-heart"></i></a></li>
-							<li><a href="#"><i class="fa fa-retweet"></i></a></li>
 							<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
 						</ul>
 					</div>
@@ -190,7 +188,6 @@
 					<div class="featured__item__pic set-bg" data-setbg="img/featured/feature-6.jpg">
 						<ul class="featured__item__pic__hover">
 							<li><a href="#"><i class="fa fa-heart"></i></a></li>
-							<li><a href="#"><i class="fa fa-retweet"></i></a></li>
 							<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
 						</ul>
 					</div>
@@ -205,7 +202,6 @@
 					<div class="featured__item__pic set-bg" data-setbg="img/featured/feature-7.jpg">
 						<ul class="featured__item__pic__hover">
 							<li><a href="#"><i class="fa fa-heart"></i></a></li>
-							<li><a href="#"><i class="fa fa-retweet"></i></a></li>
 							<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
 						</ul>
 					</div>
@@ -220,7 +216,6 @@
 					<div class="featured__item__pic set-bg" data-setbg="img/featured/feature-8.jpg">
 						<ul class="featured__item__pic__hover">
 							<li><a href="#"><i class="fa fa-heart"></i></a></li>
-							<li><a href="#"><i class="fa fa-retweet"></i></a></li>
 							<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
 						</ul>
 					</div>
@@ -235,32 +230,13 @@
 </section>
 <!-- Featured Section End -->
 
-<!-- Banner Begin -->
-<div class="banner">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6 col-md-6 col-sm-6">
-				<div class="banner__pic">
-					<img src="img/banner/banner-1.jpg" alt="">
-				</div>
-			</div>
-			<div class="col-lg-6 col-md-6 col-sm-6">
-				<div class="banner__pic">
-					<img src="img/banner/banner-2.jpg" alt="">
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Banner End -->
-
 <!-- Latest Product Section Begin -->
 <section class="latest-product spad">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4 col-md-6">
 				<div class="latest-product__text">
-					<h4>Latest Products</h4>
+					<h4>Derniers ajouts</h4>
 					<div class="latest-product__slider owl-carousel">
 						<div class="latest-prdouct__slider__item">
 							<a href="#" class="latest-product__item">
@@ -325,7 +301,7 @@
 			</div>
 			<div class="col-lg-4 col-md-6">
 				<div class="latest-product__text">
-					<h4>Top Rated Products</h4>
+					<h4>Les mieux notés</h4>
 					<div class="latest-product__slider owl-carousel">
 						<div class="latest-prdouct__slider__item">
 							<a href="#" class="latest-product__item">
@@ -390,7 +366,7 @@
 			</div>
 			<div class="col-lg-4 col-md-6">
 				<div class="latest-product__text">
-					<h4>Review Products</h4>
+					<h4>Meilleurs soldes</h4>
 					<div class="latest-product__slider owl-carousel">
 						<div class="latest-prdouct__slider__item">
 							<a href="#" class="latest-product__item">
@@ -464,7 +440,7 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="section-title from-actualite__title">
-					<h2>From The actualite</h2>
+					<h2>Actualités</h2>
 				</div>
 			</div>
 		</div>

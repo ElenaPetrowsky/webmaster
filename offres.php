@@ -11,7 +11,7 @@ require 'layouts/navbar.php';
 				<div class="hero__categories">
 					<div class="hero__categories__all">
 						<i class="fa fa-bars"></i>
-						<span>All departments</span>
+						<span>Catégories</span>
 					</div>
 					<ul>
 						<li><a href="#">Fresh Meat</a></li>
@@ -27,11 +27,7 @@ require 'layouts/navbar.php';
 				<div class="hero__search">
 					<div class="hero__search__form">
 						<form action="#">
-							<!-- <div class="hero__search__categories">
-								Toutes catégories
-								<span class="arrow_carrot-down"></span>
-							</div>
-							<input type="text" placeholder="Que voulez-vous ?"> -->
+							<input type="text" placeholder="Que voulez-vous ?">
 							<button type="submit" class="site-btn">Rechercher</button>
 						</form>
 					</div>
@@ -147,7 +143,7 @@ require 'layouts/navbar.php';
 						</div>
 						<div class="col-lg-4 col-md-4">
 							<div class="filter__found">
-								<h6><span><?php $getAllProducts->fetch() ?></span> produits trouvés</h6>
+								<h6><span>12</span> produits trouvés</h6>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-3">

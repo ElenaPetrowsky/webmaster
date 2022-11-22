@@ -11,7 +11,7 @@ require 'layouts/navbar.php';
 				<div class="hero__categories">
 					<div class="hero__categories__all">
 						<i class="fa fa-bars"></i>
-						<span>All departments</span>
+						<span>Catégories</span>
 					</div>
 					<ul>
 						<li><a href="#">Fresh Meat</a></li>
@@ -36,14 +36,12 @@ require 'layouts/navbar.php';
 							<button type="submit" class="site-btn">RECHERCHER</button>
 						</form>
 					</div>
-					<div class="hero__search__phone">
-						<div class="hero__search__phone__icon">
-							<i class="fa fa-phone"></i>
-						</div>
-						<div class="hero__search__phone__text">
-							<h5>+65 11.188.888</h5>
-							<span>support 24/7 time</span>
-						</div>
+					<div class="header__cart">
+						<ul>
+							<li><a href="./favoris.php"><i class="fa fa-heart"></i> <span>1</span></a></li>
+							<li><a href="./panier.php"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+						</ul>
+						<div class="header__cart__price">Total : <span>150 FCFA</span></div>
 					</div>
 				</div>
 			</div>
@@ -205,7 +203,6 @@ require 'layouts/navbar.php';
 					<div class="product__item__pic set-bg" data-setbg="img/product/product-1.jpg">
 						<ul class="product__item__pic__hover">
 							<li><a href="#"><i class="fa fa-heart"></i></a></li>
-							<li><a href="#"><i class="fa fa-retweet"></i></a></li>
 							<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
 						</ul>
 					</div>
