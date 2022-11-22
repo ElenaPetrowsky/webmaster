@@ -26,5 +26,4 @@
 	</form>
 </div>
 
-
 <?php require 'layouts/footer.php'; ?>

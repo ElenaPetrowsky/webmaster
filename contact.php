@@ -59,11 +59,17 @@
 		<div class="row">
 			<div class="col-lg-12 text-center">
 				<div class="breadcrumb__text">
-					<h2>Contact Us</h2>
+					<h2>Contactez-nous</h2>
 					<div class="breadcrumb__option">
 						<a href="./index.php">Accueil</a>
-						<span>Contact Us</span>
+						<span>Contactez-nous</span>
 					</div>
+				</div>
+				<div class="mt-1 breadcrumb__text">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="../index.php">Accueil</a></li>
+						<li class="breadcrumb-item active" aria-current="page"><a>clients</a></li>
+					</ol>
 				</div>
 			</div>
 		</div>
