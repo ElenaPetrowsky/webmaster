@@ -1,4 +1,11 @@
-<?php require 'layouts/navbar.php'; ?>
+<?php 
+require 'layouts/navbar.php'; 
+require_once 'config/Database.php';
+require_once 'Models/categorie.php';
+$database = new Database();	
+$db = $database->getConnection();
+
+?>
 
 	<!-- Hero Section Begin -->
 	<section class="hero">
@@ -11,12 +18,17 @@
 							<span>Catégories</span>
 						</div>
 						<ul>
-							<li><a href="#">Fresh Meat</a></li>
-							<li><a href="#">Vegetables</a></li>
-							<li><a href="#">Fruit & Nut Gifts</a></li>
-							<li><a href="#">Fresh Berries</a></li>
-							<li><a href="#">Ocean Foods</a></li>
-							<li><a href="#">Butter & Eggs</a></li>
+<?php 
+	$categoryInstance = new Category($db);
+	$categories = $categoryInstance->lire();
+	if($categories->rowCount()>0){
+		while($row = $categories->fetch(PDO::FETCH_ASSOC)){
+			extract($row);
+			echo '<li><a href="#">'.$nom.'</a></li>';
+		}
+	};
+?>
+
 						</ul>
 					</div>
 				</div>
