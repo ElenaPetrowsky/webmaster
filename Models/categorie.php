@@ -14,7 +14,7 @@ class Category
     }
 
     public function lire(){
-        $SQL_statement ="SELECT * FROM ".$this->table;
+        $SQL_statement ="SELECT * FROM ".$this->table.", image WHERE ".$this->table.".ID=objectID ORDER BY nom";
         $query = $this->connexion->prepare($SQL_statement);
         $query->execute();
         return $query;
