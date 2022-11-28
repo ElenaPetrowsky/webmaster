@@ -24,10 +24,11 @@ if (isset($_POST['validate'])) {
 				$_SESSION['id'] = $clientInfos['id'];
 				$_SESSION['email_client'] = $clientInfos['email_client'];
 				$_SESSION['nom_client'] = $clientInfos['nom_client'];
+				$_SESSION['prenoms_client'] = $clientInfos['prenoms_client'];
 				$_SESSION['contact_client'] = $clientInfos['contact_client'];
 
 				// Aller à la page d'accueil
-				header('Location: produits.php');
+				header('Location: index.php');
 			} else {
 				$error = "Votre mot de passe est incorrect";
 			}

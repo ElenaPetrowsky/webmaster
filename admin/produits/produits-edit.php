@@ -1,4 +1,8 @@
-<?php require '../../layouts/admin-haut.php'; ?>
+<?php 
+include '../../layouts/admin-haut.php'; 
+include '../controllers/readProductAction.php';
+include '../controllers/updateProductAction.php';
+?>
 
 <div class="container-fluid">
 	<div class="row">
@@ -20,41 +24,39 @@
 						<h4 class="header-title mt-0 mb-1">Modification d'un produit</h4>
 					</div>
 
-					<form method="post" action="">
+					<form method="post">
 						<div class="row">
 							<div class="col">
 								<div class="form-group row">
 									<label class="col-lg-2 col-form-label" for="nom">Nom</label>
 									<div class="col-lg-10">
-										<input required type="text" class="form-control" id="nom" name="nom" value="nom du produit">
+										<input required type="text" class="form-control" id="nom" name="nom" value="<?= $productInfos["nom_produit"] ?>">
 									</div>
 								</div>
 								<div class="form-group row">
 									<label class="col-lg-2 col-form-label" for="prix">Prix</label>
 									<div class="col-lg-10">
-										<input required type="number" min="0" class="form-control" id="prix" name="prix" value="10000">
+										<input required type="number" min="0" class="form-control" id="prix" name="prix" value="<?= $productInfos["prix_produit"] ?>">
 									</div>
 								</div>
 								<div class="form-group row">
 									<label class="col-lg-2 col-form-label" for="description">Description</label>
 									<div class="col-lg-10">
-										<textarea name="description" id="description" class="form-control mb-3" cols="30" rows="5" placeholder="Description du produit" value="description du produit"></textarea>
+										<textarea name="description" id="description" class="form-control mb-3" cols="30" rows="5" placeholder="Description du produit" value="<?= $productInfos["description_produit"] ?>"></textarea>
 									</div>
 								</div>
 								<div class="form-group row">
 									<label class="col-lg-2 col-form-label" for="photo">Photo</label>
 									<div class="col-lg-10">
-										<input required type="file" class="form-control" id="photo" name="photo">
+										<input type="file" class="form-control" id="photo" name="photo">
 									</div>
 								</div>
-								<button type="submit" class="btn btn-primary">Enregistrer</button>
+								<button type="submit" class="btn btn-primary" name="validate">Enregistrer</button>
 							</div>
 						</div>
 					</form>
-
 				</div>
 			</div>
-
 		</div>
 	</div>
 </div>

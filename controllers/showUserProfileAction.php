@@ -11,6 +11,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
 
 		$userInfos = $checkIfuserExists->fetch();
 		$nom_client = $userInfos['nom_client'];
+		$prenoms_client = $userInfos['prenoms_client'];
 		$email_client = $userInfos['email_client'];
 		$contact_client = $userInfos['contact_client'];
 

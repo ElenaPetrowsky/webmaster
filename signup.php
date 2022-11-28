@@ -1,4 +1,7 @@
-<?php require 'layouts/navbar.php'; ?>
+<?php
+require 'controllers/showProductsAction.php';
+require 'layouts/navbar.php';
+?>
 
 <div class="container">
 	<form method="post" class="auth">

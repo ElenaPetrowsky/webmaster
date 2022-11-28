@@ -1,46 +1,18 @@
-<?php require 'layouts/navbar.php'; ?>
+<?php
+require 'layouts/navbar.php';
+?>
 
 <!-- Hero Section Begin -->
 <section class="hero">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-3">
-				<div class="hero__categories">
-					<div class="hero__categories__all">
-						<i class="fa fa-bars"></i>
-						<span>Catégories</span>
-					</div>
-					<ul>
-						<li><a href="#">Fresh Meat</a></li>
-						<li><a href="#">Vegetables</a></li>
-						<li><a href="#">Fruit & Nut Gifts</a></li>
-						<li><a href="#">Fresh Berries</a></li>
-						<li><a href="#">Ocean Foods</a></li>
-						<li><a href="#">Butter & Eggs</a></li>
-					</ul>
-				</div>
-			</div>
+			<div class="col-lg-3"></div>
 			<div class="col-lg-9">
-				<div class="hero__search">
-					<div class="hero__search__form">
-						<form action="#">
-							<input type="text" placeholder="Que voulez-vous">
-							<button type="submit" class="site-btn">RECHERCHER</button>
-						</form>
-					</div>
-					<div class="header__cart">
-						<ul>
-							<li><a href="./favoris.php"><i class="fa fa-heart"></i> <span>1</span></a></li>
-							<li><a href="./panier.php"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
-						</ul>
-						<div class="header__cart__price">Total : <span>150 FCFA</span></div>
-					</div>
-				</div>
 				<div class="hero__item set-bg" data-setbg="img/hero/banner.jpg">
 					<div class="hero__text">
 						<span>FRUIT FRESH</span>
 						<h2>Vegetable <br>100% Organic</h2>
-						<p>Free Pickup and Delivery Available</p>
+						<p>Achetez tout et n'importe quoi</p>
 						<a href="./offres.php" class="primary-btn">Faîtes vos achats maintenant</a>
 					</div>
 				</div>
@@ -123,7 +95,7 @@
 					</div>
 					<div class="featured__item__text">
 						<h6><a href="#">Crab Pool Security</a></h6>
-						<h5>30.00</h5>
+						<h5>30</h5>
 					</div>
 				</div>
 			</div>
@@ -137,7 +109,7 @@
 					</div>
 					<div class="featured__item__text">
 						<h6><a href="#">Crab Pool Security</a></h6>
-						<h5>30.00</h5>
+						<h5>30</h5>
 					</div>
 				</div>
 			</div>
@@ -151,7 +123,7 @@
 					</div>
 					<div class="featured__item__text">
 						<h6><a href="#">Crab Pool Security</a></h6>
-						<h5>30.00</h5>
+						<h5>30</h5>
 					</div>
 				</div>
 			</div>
@@ -165,7 +137,7 @@
 					</div>
 					<div class="featured__item__text">
 						<h6><a href="#">Crab Pool Security</a></h6>
-						<h5>30.00</h5>
+						<h5>30</h5>
 					</div>
 				</div>
 			</div>
@@ -179,7 +151,7 @@
 					</div>
 					<div class="featured__item__text">
 						<h6><a href="#">Crab Pool Security</a></h6>
-						<h5>30.00</h5>
+						<h5>30</h5>
 					</div>
 				</div>
 			</div>
@@ -193,7 +165,7 @@
 					</div>
 					<div class="featured__item__text">
 						<h6><a href="#">Crab Pool Security</a></h6>
-						<h5>30.00</h5>
+						<h5>30</h5>
 					</div>
 				</div>
 			</div>
@@ -207,7 +179,7 @@
 					</div>
 					<div class="featured__item__text">
 						<h6><a href="#">Crab Pool Security</a></h6>
-						<h5>30.00</h5>
+						<h5>30</h5>
 					</div>
 				</div>
 			</div>
@@ -221,7 +193,7 @@
 					</div>
 					<div class="featured__item__text">
 						<h6><a href="#">Crab Pool Security</a></h6>
-						<h5>30.00</h5>
+						<h5>30</h5>
 					</div>
 				</div>
 			</div>
@@ -245,7 +217,7 @@
 								</div>
 								<div class="latest-product__item__text">
 									<h6>Crab Pool Security</h6>
-									<span>30.00</span>
+									<span>30</span>
 								</div>
 							</a>
 							<a href="#" class="latest-product__item">
@@ -254,7 +226,7 @@
 								</div>
 								<div class="latest-product__item__text">
 									<h6>Crab Pool Security</h6>
-									<span>30.00</span>
+									<span>30</span>
 								</div>
 							</a>
 							<a href="#" class="latest-product__item">
@@ -263,7 +235,7 @@
 								</div>
 								<div class="latest-product__item__text">
 									<h6>Crab Pool Security</h6>
-									<span>30.00</span>
+									<span>30</span>
 								</div>
 							</a>
 						</div>
@@ -274,7 +246,7 @@
 								</div>
 								<div class="latest-product__item__text">
 									<h6>Crab Pool Security</h6>
-									<span>30.00</span>
+									<span>30</span>
 								</div>
 							</a>
 							<a href="#" class="latest-product__item">
@@ -283,7 +255,7 @@
 								</div>
 								<div class="latest-product__item__text">
 									<h6>Crab Pool Security</h6>
-									<span>30.00</span>
+									<span>30</span>
 								</div>
 							</a>
 							<a href="#" class="latest-product__item">
@@ -292,7 +264,7 @@
 								</div>
 								<div class="latest-product__item__text">
 									<h6>Crab Pool Security</h6>
-									<span>30.00</span>
+									<span>30</span>
 								</div>
 							</a>
 						</div>
@@ -310,7 +282,7 @@
 								</div>
 								<div class="latest-product__item__text">
 									<h6>Crab Pool Security</h6>
-									<span>30.00</span>
+									<span>30</span>
 								</div>
 							</a>
 							<a href="#" class="latest-product__item">
@@ -319,7 +291,7 @@
 								</div>
 								<div class="latest-product__item__text">
 									<h6>Crab Pool Security</h6>
-									<span>30.00</span>
+									<span>30</span>
 								</div>
 							</a>
 							<a href="#" class="latest-product__item">
@@ -328,7 +300,7 @@
 								</div>
 								<div class="latest-product__item__text">
 									<h6>Crab Pool Security</h6>
-									<span>30.00</span>
+									<span>30</span>
 								</div>
 							</a>
 						</div>
@@ -339,7 +311,7 @@
 								</div>
 								<div class="latest-product__item__text">
 									<h6>Crab Pool Security</h6>
-									<span>30.00</span>
+									<span>30</span>
 								</div>
 							</a>
 							<a href="#" class="latest-product__item">
@@ -348,7 +320,7 @@
 								</div>
 								<div class="latest-product__item__text">
 									<h6>Crab Pool Security</h6>
-									<span>30.00</span>
+									<span>30</span>
 								</div>
 							</a>
 							<a href="#" class="latest-product__item">
@@ -357,7 +329,7 @@
 								</div>
 								<div class="latest-product__item__text">
 									<h6>Crab Pool Security</h6>
-									<span>30.00</span>
+									<span>30</span>
 								</div>
 							</a>
 						</div>
@@ -375,7 +347,7 @@
 								</div>
 								<div class="latest-product__item__text">
 									<h6>Crab Pool Security</h6>
-									<span>30.00</span>
+									<span>30</span>
 								</div>
 							</a>
 							<a href="#" class="latest-product__item">
@@ -384,7 +356,7 @@
 								</div>
 								<div class="latest-product__item__text">
 									<h6>Crab Pool Security</h6>
-									<span>30.00</span>
+									<span>30</span>
 								</div>
 							</a>
 							<a href="#" class="latest-product__item">
@@ -393,7 +365,7 @@
 								</div>
 								<div class="latest-product__item__text">
 									<h6>Crab Pool Security</h6>
-									<span>30.00</span>
+									<span>30</span>
 								</div>
 							</a>
 						</div>
@@ -404,7 +376,7 @@
 								</div>
 								<div class="latest-product__item__text">
 									<h6>Crab Pool Security</h6>
-									<span>30.00</span>
+									<span>30</span>
 								</div>
 							</a>
 							<a href="#" class="latest-product__item">
@@ -413,7 +385,7 @@
 								</div>
 								<div class="latest-product__item__text">
 									<h6>Crab Pool Security</h6>
-									<span>30.00</span>
+									<span>30</span>
 								</div>
 							</a>
 							<a href="#" class="latest-product__item">
@@ -422,7 +394,7 @@
 								</div>
 								<div class="latest-product__item__text">
 									<h6>Crab Pool Security</h6>
-									<span>30.00</span>
+									<span>30</span>
 								</div>
 							</a>
 						</div>
@@ -453,7 +425,6 @@
 					<div class="actualite__item__text">
 						<ul>
 							<li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-							<li><i class="fa fa-comment-o"></i> 5</li>
 						</ul>
 						<h5><a href="#">Cooking tips make cooking simple</a></h5>
 						<p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
@@ -468,7 +439,6 @@
 					<div class="actualite__item__text">
 						<ul>
 							<li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-							<li><i class="fa fa-comment-o"></i> 5</li>
 						</ul>
 						<h5><a href="#">6 ways to prepare breakfast for 30</a></h5>
 						<p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
@@ -483,7 +453,6 @@
 					<div class="actualite__item__text">
 						<ul>
 							<li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-							<li><i class="fa fa-comment-o"></i> 5</li>
 						</ul>
 						<h5><a href="#">Visit the clean farm in the US</a></h5>
 						<p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>

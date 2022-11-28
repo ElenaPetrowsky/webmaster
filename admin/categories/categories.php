@@ -1,4 +1,7 @@
-<?php require '../../layouts/admin-haut.php'; ?>
+<?php
+include '../../layouts/admin-haut.php';
+include '../controllers/requetesAdmin.php';
+?>
 
 <div class="container-fluid">
 	<div class="row">
@@ -26,25 +29,26 @@
 								<tr>
 									<th scope="col">N°</th>
 									<th scope="col">Noms</th>
-									<th scope="col">Photos</th>
+									<!-- <th scope="col">Photos</th> -->
 									<th scope="col">Actions</th>
 								</tr>
 							</thead>
 							<tbody>
-
-								<tr>
-									<td>categorie->id</td>
-									<td>categorie->nom_categorie</td>
-									<td>categorie->photo_categorie</td>
-									<td>
-										<a href="./categories-edit.php" class="btn btn-primary btn-sm">
-											<i class="bi bi-pencil-square"></i>
-										</a>
-										<a href="./categories-delete" class="btn btn-danger btn-sm suppression">
-											<i class="bi bi-trash"></i>
-										</a>
-									</td>
-								</tr>
+								<?php while ($categorie = $getAllCategories->fetch()) { ?>
+									<tr>
+										<td><?= $categorie["id"] ?></td>
+										<td><?= $categorie["libelle_categorie"] ?></td>
+										<!-- <td>categorie->photo_categorie</td> -->
+										<td>
+											<a href="./categories-edit.php?id=<?= $categorie['id']; ?>" class="btn btn-primary btn-sm">
+												<i class="bi bi-pencil-square"></i>
+											</a>
+											<a href="deleteCategorieAction.php?id=<?= $categorie['id']; ?>" class="btn btn-danger btn-sm suppression">
+												<i class="bi bi-trash"></i>
+											</a>
+										</td>
+									</tr>
+								<?php } ?>
 							</tbody>
 						</table>
 					</div>

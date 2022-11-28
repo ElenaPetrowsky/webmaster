@@ -1,5 +1,5 @@
 let text1 = "Etes-vous sûr de vouloir supprimer cet élément ?"
-var elems = document.getElementsByClassName('suppression');
+var elems = document.querySelector('.suppression');
 for (var i = 0, l = elems.length; i < l; i++) {
 	elems[i].onclick = function() {
 		return confirm(text1);
@@ -7,7 +7,7 @@ for (var i = 0, l = elems.length; i < l; i++) {
 }
 
 let text2 = "Voulez-vous enregistrer les modifications ?"
-var elems = document.getElementsByClassName('modification');
+var elems = document.querySelector('.modification');
 for (var i = 0, l = elems.length; i < l; i++) {
 	elems[i].onclick = function() {
 		return confirm(text2);

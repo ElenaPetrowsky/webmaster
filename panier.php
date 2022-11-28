@@ -84,7 +84,7 @@
 									<h5>Vegetable’s Package</h5>
 								</td>
 								<td class="shoping__cart__price">
-									55.00
+									55
 								</td>
 								<td class="shoping__cart__quantity">
 									<div class="quantity">
@@ -94,7 +94,7 @@
 									</div>
 								</td>
 								<td class="shoping__cart__total">
-									110.00
+									110
 								</td>
 								<td class="shoping__cart__item__close">
 									<span class="icon_close"></span>
@@ -106,7 +106,7 @@
 									<h5>Fresh Garden Vegetable</h5>
 								</td>
 								<td class="shoping__cart__price">
-									39.00
+									39
 								</td>
 								<td class="shoping__cart__quantity">
 									<div class="quantity">
@@ -128,7 +128,7 @@
 									<h5>Organic Bananas</h5>
 								</td>
 								<td class="shoping__cart__price">
-									69.00
+									69
 								</td>
 								<td class="shoping__cart__quantity">
 									<div class="quantity">

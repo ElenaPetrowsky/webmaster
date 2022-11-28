@@ -1,4 +1,7 @@
-<?php require '../../layouts/admin-haut.php'; ?>
+<?php
+include '../../layouts/admin-haut.php';
+include '../controllers/requetesAdmin.php';
+?>
 
 <div class="container-fluid">
 	<div class="row">
@@ -32,21 +35,22 @@
 								</tr>
 							</thead>
 							<tbody>
-
-								<tr>
-									<td>client->id</td>
-									<td>client->nom_client client->prenoms_client</td>
-									<td>client->email_client</td>
-									<td>client->tel_client</td>
-									<td>
-										<a href="./clients-edit.php" class="btn btn-primary btn-sm">
-											<i class="bi bi-pencil-square"></i>
-										</a>
-										<a href="./clients-delete" class="btn btn-danger btn-sm suppression">
-											<i class="bi bi-trash"></i>
-										</a>
-									</td>
-								</tr>
+								<?php while ($client = $getAllClients->fetch()) { ?>
+									<tr>
+										<td><?= $client["id"] ?></td>
+										<td><?= $client["nom_client"] . " " . $client["prenoms_client"] ?></td>
+										<td><?= $client["email_client"] ?></td>
+										<td><?= $client["contact_client"] ?></td>
+										<td>
+											<a href="./clients-edit.php?id=<?= $client['id']; ?>" class="btn btn-primary btn-sm">
+												<i class="bi bi-pencil-square"></i>
+											</a>
+											<a href="deleteClientAction.php?id=<?= $client['id']; ?>" class="btn btn-danger btn-sm suppression">
+												<i class="bi bi-trash"></i>
+											</a>
+										</td>
+									</tr>
+								<?php } ?>
 							</tbody>
 						</table>
 					</div>

@@ -1,49 +1,6 @@
 <?php
-require 'controllers/showProductsAction.php';
 require 'layouts/navbar.php';
 ?>
-
-<!-- Hero Section Begin -->
-<section class="hero hero-normal">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-3">
-				<div class="hero__categories">
-					<div class="hero__categories__all">
-						<i class="fa fa-bars"></i>
-						<span>Catégories</span>
-					</div>
-					<ul>
-						<li><a href="#">Fresh Meat</a></li>
-						<li><a href="#">Vegetables</a></li>
-						<li><a href="#">Fruit & Nut Gifts</a></li>
-						<li><a href="#">Fresh Berries</a></li>
-						<li><a href="#">Ocean Foods</a></li>
-						<li><a href="#">Butter & Eggs</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-lg-9">
-				<div class="hero__search">
-					<div class="hero__search__form">
-						<form action="#">
-							<input type="text" placeholder="Que voulez-vous ?">
-							<button type="submit" class="site-btn">Rechercher</button>
-						</form>
-					</div>
-					<div class="header__cart">
-						<ul>
-							<li><a href="./favoris.php"><i class="fa fa-heart"></i> <span>1</span></a></li>
-							<li><a href="./panier.php"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
-						</ul>
-						<div class="header__cart__price">Total : <span>150 FCFA</span></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- Hero Section End -->
 
 <!-- Breadcrumb Section Begin -->
 <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
@@ -119,7 +76,7 @@ require 'layouts/navbar.php';
 									<div class="product__discount__item__text">
 										<span>Dried Fruit</span>
 										<h5><a href="./produit-details.php">Raisin’n’nuts</a></h5>
-										<div class="product__item__price">30.00 FCFA <span>36.00 FCFA</span></div>
+										<div class="product__item__price">30 FCFA <span>36 FCFA</span></div>
 									</div>
 								</div>
 							</div>

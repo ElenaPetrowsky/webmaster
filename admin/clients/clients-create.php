@@ -49,7 +49,7 @@
 												<input required type="email" class="form-control" id="email" name="email">
 											</div>
 										</div>
-										<button type="submit" class="btn btn-primary">Enregistrer</button>
+										<button type="submit" class="btn btn-primary" name="validate">Enregistrer</button>
 									</div>
 								</div>
 							</form>

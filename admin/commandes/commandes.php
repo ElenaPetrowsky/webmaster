@@ -1,4 +1,7 @@
-<?php require '../../layouts/admin-haut.php'; ?>
+<?php
+include '../../layouts/admin-haut.php';
+include '../controllers/requetesAdmin.php';
+?>
 
 <div class="container-fluid">
 	<div class="row">
@@ -31,19 +34,21 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr>
-									<td>commande->id</td>
-									<td>commande->client_commande</td>
-									<td>commande->etat_commande</td>
-									<td>
-										<a href="./commandes-edit.php" class="btn btn-primary btn-sm">
-											<i class="bi bi-pencil-square"></i>
-										</a>
-										<a href="./commandes-delete" class="btn btn-danger btn-sm suppression">
-											<i class="bi bi-trash"></i>
-										</a>
-									</td>
-								</tr>
+								<?php while ($commande = $getAllCommandes->fetch()) { ?>
+									<tr>
+										<td><?= $commande["id"] ?></td>
+										<td><?= $commande["id_client"] ?></td>
+										<td><?= $commande["etat"] ?></td>
+										<td>
+											<a href="./commandes-edit.php?id=<?= $commande['id']; ?>" class="btn btn-primary btn-sm">
+												<i class="bi bi-pencil-square"></i>
+											</a>
+											<a href="deleteCommandeAction.php?id=<?= $commande['id']; ?>" class="btn btn-danger btn-sm suppression">
+												<i class="bi bi-trash"></i>
+											</a>
+										</td>
+									</tr>
+								<?php } ?>
 							</tbody>
 						</table>
 					</div>

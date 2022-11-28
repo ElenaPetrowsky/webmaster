@@ -18,7 +18,7 @@
 	<link rel="stylesheet" href="../css/app.css"/>
 	<link rel="stylesheet" href="../../css/app.css"/>
 
-	<title>Admin</title>
+	<title>Admin Webmaster</title>
 </head>
 
 <body>
@@ -30,34 +30,34 @@
 				</button>
 			</div>
 			<div class="p-4">
-				<h1><a href="/ogani" class="logo">Webmaster</a></h1>
+				<h1><a href="/webmaster-team" class="logo">Webmaster</a></h1>
 				<ul class="list-unstyled components mb-5">
 					<li class="nav-item">
-						<a class="nav-link" href="/ogani/admin/index.php">
+						<a class="nav-link" href="/webmaster-team/admin/index.php">
 							<i class="bi bi-house-door"></i>
 							<span>Administration</span>
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="/ogani/admin/clients/clients.php">
+						<a class="nav-link" href="/webmaster-team/admin/clients/clients.php">
 							<i class="bi bi-person"></i>
 							<span>Clients</span>
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="/ogani/admin/produits/produits.php">
+						<a class="nav-link" href="/webmaster-team/admin/produits/produits.php">
 							<i class="bi bi-people"></i>
 							<span>Produits</span>
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="/ogani/admin/categories/categories.php">
+						<a class="nav-link" href="/webmaster-team/admin/categories/categories.php">
 							<i class="bi bi-calendar4-week"></i>
 							<span>Catégories</span>
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="/ogani/admin/commandes/commandes.php">
+						<a class="nav-link" href="/webmaster-team/admin/commandes/commandes.php">
 							<i class="bi bi-book"></i>
 							<span>Commandes</span>
 						</a>

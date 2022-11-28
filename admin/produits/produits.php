@@ -1,4 +1,7 @@
-<?php require '../../layouts/admin-haut.php'; ?>
+<?php 
+include '../../layouts/admin-haut.php'; 
+include '../controllers/requetesAdmin.php';
+?>
 
 <div class="container-fluid">
 	<div class="row">
@@ -33,22 +36,23 @@
 								</tr>
 							</thead>
 							<tbody>
-
+								<?php while($produit = $getAllProducts->fetch()) { ?>
 								<tr>
-									<td>produit->id</td>
-									<td>produit->nom_produit</td>
-									<td>produit->prix_produit</td>
-									<td>produit->description_produit</td>
-									<td>produit->photo_produit</td>
+									<td><?= $produit["id"] ?></td>
+									<td><?= $produit["nom_produit"] ?></td>
+									<td><?= $produit["prix_produit"] ?></td>
+									<td><?= $produit["description_produit"] ?></td>
+									<td><?= $produit["photo_produit"] ?></td>
 									<td>
-										<a href="./produits-edit.php" class="btn btn-primary btn-sm">
+										<a href="./produits-edit.php?id=<?= $produit['id']; ?>" class="btn btn-primary btn-sm">
 											<i class="bi bi-pencil-square"></i>
 										</a>
-										<a href="./produits-delete" class="btn btn-danger btn-sm suppression">
+										<a href="deleteProductAction.php?id=<?= $produit['id']; ?>" class="btn btn-danger btn-sm suppression">
 											<i class="bi bi-trash"></i>
 										</a>
 									</td>
 								</tr>
+								<?php } ?>
 							</tbody>
 						</table>
 					</div>

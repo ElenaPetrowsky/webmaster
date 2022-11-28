@@ -1,8 +1,4 @@
-<?php 
-include '../../layouts/admin-haut.php'; 
-include '../controllers/readClientAction.php';
-include '../controllers/updateClientAction.php';
-?>
+<?php require '../../layouts/admin-haut.php'; ?>
 
 <div class="container-fluid">
 	<div class="row">
@@ -11,7 +7,7 @@ include '../controllers/updateClientAction.php';
 				<ol class="breadcrumb">
 					<li class="breadcrumb-item"><a href="../index.php">Accueil</a></li>
 					<li class="breadcrumb-item"><a href="./commandes.php">Commandes</a></li>
-					<li class="breadcrumb-item active" aria-current="page"><a>Modifier</a></li>
+					<li class="breadcrumb-item active" aria-current="page"><a>Ajouter</a></li>
 				</ol>
 			</nav>
 		</div>
@@ -21,7 +17,7 @@ include '../controllers/updateClientAction.php';
 			<div class="card">
 				<div class="card-body">
 					<div class="d-flex mb-2">
-						<h4 class="header-title mt-0 mb-1">Modification d'une commande</h4>
+						<h4 class="header-title mt-0 mb-1">Ajout d'une commande</h4>
 					</div>
 
 					<form method="post" action="">
@@ -30,7 +26,7 @@ include '../controllers/updateClientAction.php';
 								<div class="form-group row">
 									<label class="col-lg-2 col-form-label" for="client">Client</label>
 									<div class="col-lg-10">
-										<input required type="text" class="form-control" id="client" name="client" value="<?= $commandeInfos["id_client"] ?>">
+										<input required type="text" class="form-control" id="client" name="client">
 									</div>
 								</div>
 								<div class="form-group row">
@@ -53,10 +49,8 @@ include '../controllers/updateClientAction.php';
 							</div>
 						</div>
 					</form>
-
 				</div>
 			</div>
-
 		</div>
 	</div>
 </div>

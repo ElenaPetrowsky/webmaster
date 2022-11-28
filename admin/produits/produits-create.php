@@ -1,4 +1,7 @@
-<?php require '../../layouts/admin-haut.php'; ?>
+<?php 
+include '../../layouts/admin-haut.php'; 
+include '../controllers/createProductAction.php';
+?>
 
 <div class="">
 	<div class="content">
@@ -22,7 +25,7 @@
 								<h4 class="header-title mt-0 mb-1">Ajouter un produit</h4>
 							</div>
 
-							<form method="post" action="">
+							<form method="post">
 								<div class="row">
 									<div class="col">
 										<div class="form-group row">
@@ -46,10 +49,10 @@
 										<div class="form-group row">
 											<label class="col-lg-2 col-form-label" for="photo">Photo</label>
 											<div class="col-lg-10">
-												<input required type="file" class="form-control" id="photo" name="photo">
+												<input type="file" class="form-control" id="photo" name="photo">
 											</div>
 										</div>
-										<button type="submit" class="btn btn-primary">Enregistrer</button>
+										<button type="submit" class="btn btn-primary" name="validate">Enregistrer</button>
 									</div>
 								</div>
 							</form>

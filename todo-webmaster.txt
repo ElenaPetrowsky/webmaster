@@ -1,0 +1,55 @@
+Authentification
+	Inscription
+		Confirmation par email
+	Connexion
+	Déconnexion
+
+Payement avec l'API de Paypal
+
+Base de données
+	Clients
+		nom
+		prenoms
+		email
+		mot de passe
+		contact
+		clé de confirmation
+		confirmé
+	Produits
+		nom
+		prix
+		description
+		photo
+		categorie
+	Soldes
+		produit
+		prix solde
+	Catégorie
+		categorie
+		photo
+	Images
+		id
+		lien image
+	Commandes (Panier)
+		client
+		produit
+		quantité
+		état
+	Favoris
+		client
+		produit
+
+Design
+	Bleu 40%
+	Orange 20%
+	Blanc 20%
+	Noir 20%
+
+Pages
+	Accueil
+	Actualités
+	Les offres
+	Contacts
+	Les boutiques
+	Administration
+		CRUD chaque table de la base de données

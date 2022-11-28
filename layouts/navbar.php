@@ -1,3 +1,7 @@
+<?php
+require 'controllers/showProductsAction.php';
+?>
+
 <!DOCTYPE html>
 <html lang="fr-FR">
 
@@ -38,7 +42,7 @@
 				<li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
 				<li><a href="./panier.php"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
 			</ul>
-			<div class="header__cart__price">Total : <span>150.00</span></div>
+			<div class="header__cart__price">Total : <span>150</span></div>
 		</div>
 		<div class="humberger__menu__widget">
 			<div class="header__top__right__auth">
@@ -142,3 +146,42 @@
 			</div>
 		</div>
 	</header>
+
+	<!-- Hero Section Begin -->
+	<section class="hero hero-normal">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="hero__categories">
+						<div class="hero__categories__all">
+							<i class="fa fa-bars"></i>
+							<span>Catégories</span>
+						</div>
+						<ul>
+							<?php while ($categorie = $getAllCategories->fetch()) { ?>
+								<li><a href="#"><?= $categorie['libelle_categorie']; ?></a></li>
+							<?php } ?>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-9">
+					<div class="hero__search">
+						<div class="hero__search__form">
+							<form action="#">
+								<input type="text" placeholder="Que voulez-vous ?">
+								<button type="submit" class="site-btn">Rechercher</button>
+							</form>
+						</div>
+						<div class="header__cart">
+							<ul>
+								<li><a href="./favoris.php"><i class="fa fa-heart"></i> <span>1</span></a></li>
+								<li><a href="./panier.php"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+							</ul>
+							<div class="header__cart__price">Total : <span>150 FCFA</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Hero Section End -->

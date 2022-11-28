@@ -22,7 +22,7 @@
 								<h4 class="header-title mt-0 mb-1">Ajouter une catégorie</h4>
 							</div>
 
-							<form method="post" action="">
+							<form method="post">
 								<div class="row">
 									<div class="col">
 										<div class="form-group row">
@@ -37,7 +37,7 @@
 												<input required type="file" class="form-control" id="photo" name="photo">
 											</div>
 										</div>
-										<button type="submit" class="btn btn-primary">Enregistrer</button>
+										<button type="submit" class="btn btn-primary" name="validate">Enregistrer</button>
 									</div>
 								</div>
 							</form>
