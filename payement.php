@@ -1,4 +1,4 @@
-<?php require 'layouts/navbar.php'; ?>
+<?php include 'layouts/navbar.php'; ?>
 
 <!-- Hero Section Begin -->
 <section class="hero hero-normal">
@@ -8,7 +8,7 @@
 				<div class="hero__categories">
 					<div class="hero__categories__all">
 						<i class="fa fa-bars"></i>
-						<span>All departments</span>
+						<span>Catégories</span>
 					</div>
 					<ul>
 						<li><a href="#">Fresh Meat</a></li>
@@ -132,4 +132,4 @@
 </section>
 <!-- payement Section End -->
 
-<?php require 'layouts/footer.php'; ?>
+<?php include 'layouts/footer.php'; ?>

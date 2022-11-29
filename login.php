@@ -1,4 +1,7 @@
-<?php require 'layouts/navbar.php'; ?>
+<?php 
+include 'layouts/navbar.php'; 
+include 'controllers/loginAction.php'; 
+?>
 
 <div class="container-fluid">
 	<form method="post" class="auth">
@@ -17,4 +20,4 @@
 	</form>
 </div>
 
-<?php require 'layouts/footer.php'; ?>
+<?php include 'layouts/footer.php'; ?>

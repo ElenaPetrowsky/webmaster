@@ -1,70 +1,20 @@
-<?php require 'layouts/navbar.php'; ?>
-
-<!-- Hero Section Begin -->
-<section class="hero hero-normal">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-3">
-				<div class="hero__categories">
-					<div class="hero__categories__all">
-						<i class="fa fa-bars"></i>
-						<span>All departments</span>
-					</div>
-					<ul>
-						<li><a href="#">Fresh Meat</a></li>
-						<li><a href="#">Vegetables</a></li>
-						<li><a href="#">Fruit & Nut Gifts</a></li>
-						<li><a href="#">Fresh Berries</a></li>
-						<li><a href="#">Ocean Foods</a></li>
-						<li><a href="#">Butter & Eggs</a></li>
-						<li><a href="#">Fastfood</a></li>
-						<li><a href="#">Fresh Onion</a></li>
-						<li><a href="#">Papayaya & Crisps</a></li>
-						<li><a href="#">Oatmeal</a></li>
-						<li><a href="#">Fresh Bananas</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-lg-9">
-				<div class="hero__search">
-					<div class="hero__search__form">
-						<form action="#">
-							<div class="hero__search__categories">
-								Toutes catégories
-								<span class="arrow_carrot-down"></span>
-							</div>
-							<input type="text" placeholder="Que voulez-vous ?">
-							<button type="submit" class="site-btn">RECHERCHER</button>
-						</form>
-					</div>
-					<div class="hero__search__phone">
-						<div class="hero__search__phone__icon">
-							<i class="fa fa-phone"></i>
-						</div>
-						<div class="hero__search__phone__text">
-							<h5>+65 11.188.888</h5>
-							<span>support 24/7 time</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- Hero Section End -->
+<?php
+include 'layouts/navbar.php';
+include 'controllers/showActualiteContentAction.php';
+?>
 
 <!-- actualite Details Hero Begin -->
-<section class="actualite-details-hero set-bg" data-setbg="img/actualite/details/details-hero.jpg">
+<section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-12">
-				<div class="actualite__details__hero__text">
-					<h2>The Moment You Need To Remove Garlic From The Menu</h2>
-					<ul>
-						<li>By Michael Scofield</li>
-						<li>January 14, 2019</li>
-						<li>8 Comments</li>
-					</ul>
+			<div class="col-lg-12 text-center">
+				<div class="breadcrumb__text">
+					<h2><?= $actualite_titre ?></h2>
+					<div class="breadcrumb__option">
+						<a href="./index.php">Accueil</a>
+						<a href="./actualite.php">Actualités</a>
+						<span><?= $actualite_titre ?></span>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -80,7 +30,7 @@
 				<div class="actualite__sidebar">
 					<div class="actualite__sidebar__search">
 						<form action="#">
-							<input type="text" placeholder="Search...">
+							<input type="text" placeholder="Recherche ...">
 							<button type="submit"><span class="icon_search"></span></button>
 						</form>
 					</div>
@@ -127,7 +77,7 @@
 						</div>
 					</div>
 					<div class="actualite__sidebar__item">
-						<h4>Search By</h4>
+						<h4>Recherche par</h4>
 						<div class="actualite__sidebar__item__tags">
 							<a href="#">Apple</a>
 							<a href="#">Beauty</a>
@@ -142,20 +92,7 @@
 			<div class="col-lg-8 col-md-7 order-md-1 order-1">
 				<div class="actualite__details__text">
 					<img src="img/actualite/details/details-pic.jpg" alt="">
-					<p>Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
-						dui. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Mauris blandit
-						aliquet elit, eget tincidunt nibh pulvinar a. Vivamus magna justo, lacinia eget consectetur
-						sed, convallis at tellus. Sed porttitor lectus nibh. Donec sollicitudin molestie malesuada.
-						Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Proin eget tortor risus.
-						Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis
-						quis ac lectus. Donec sollicitudin molestie malesuada. Nulla quis lorem ut libero malesuada
-						feugiat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>
-					<h3>The corner window forms a place within a place that is a resting point within the large
-						space.</h3>
-					<p>The study area is located at the back with a view of the vast nature. Together with the other
-						buildings, a congruent story has been managed in which the whole has a reinforcing effect on
-						the components. The use of materials seeks connection to the main house, the adjacent
-						stables</p>
+					<?= $actualite_contenu ?>
 				</div>
 				<div class="actualite__details__content">
 					<div class="row">
@@ -254,4 +191,4 @@
 </section>
 <!-- Related actualite Section End -->
 
-<?php require 'layouts/footer.php'; ?>
+<?php include 'layouts/footer.php'; ?>

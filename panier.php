@@ -1,53 +1,4 @@
-<?php require 'layouts/navbar.php'; ?>
-
-<!-- Hero Section Begin -->
-<section class="hero hero-normal">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-3">
-				<div class="hero__categories">
-					<div class="hero__categories__all">
-						<i class="fa fa-bars"></i>
-						<span>All departments</span>
-					</div>
-					<ul>
-						<li><a href="#">Fresh Meat</a></li>
-						<li><a href="#">Vegetables</a></li>
-						<li><a href="#">Fruit & Nut Gifts</a></li>
-						<li><a href="#">Fresh Berries</a></li>
-						<li><a href="#">Ocean Foods</a></li>
-						<li><a href="#">Butter & Eggs</a></li>
-						<li><a href="#">Fastfood</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-lg-9">
-				<div class="hero__search">
-					<div class="hero__search__form">
-						<form action="#">
-							<div class="hero__search__categories">
-								Toutes catégories
-								<span class="arrow_carrot-down"></span>
-							</div>
-							<input type="text" placeholder="Que voulez-vous ?">
-							<button type="submit" class="site-btn">RECHERCHER</button>
-						</form>
-					</div>
-					<div class="hero__search__phone">
-						<div class="hero__search__phone__icon">
-							<i class="fa fa-phone"></i>
-						</div>
-						<div class="hero__search__phone__text">
-							<h5>+65 11.188.888</h5>
-							<span>support 24/7 time</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- Hero Section End -->
+<?php include 'layouts/navbar.php'; ?>
 
 <!-- Breadcrumb Section Begin -->
 <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
@@ -55,10 +6,10 @@
 		<div class="row">
 			<div class="col-lg-12 text-center">
 				<div class="breadcrumb__text">
-					<h2>Shopping Cart</h2>
+					<h2>Mon panier</h2>
 					<div class="breadcrumb__option">
 						<a href="./index.php">Accueil</a>
-						<span>Shopping Cart</span>
+						<span>Mon panier</span>
 					</div>
 				</div>
 			</div>
@@ -76,9 +27,9 @@
 					<table>
 						<thead>
 							<tr>
-								<th class="shoping__product">Products</th>
-								<th>Price</th>
-								<th>Quantity</th>
+								<th class="shoping__product">Produits</th>
+								<th>Prix</th>
+								<th>Quantité</th>
 								<th>Total</th>
 								<th></th>
 							</tr>
@@ -90,7 +41,7 @@
 									<h5>Vegetable’s Package</h5>
 								</td>
 								<td class="shoping__cart__price">
-									55.00
+									55
 								</td>
 								<td class="shoping__cart__quantity">
 									<div class="quantity">
@@ -100,7 +51,7 @@
 									</div>
 								</td>
 								<td class="shoping__cart__total">
-									110.00
+									110
 								</td>
 								<td class="shoping__cart__item__close">
 									<span class="icon_close"></span>
@@ -112,7 +63,7 @@
 									<h5>Fresh Garden Vegetable</h5>
 								</td>
 								<td class="shoping__cart__price">
-									39.00
+									39
 								</td>
 								<td class="shoping__cart__quantity">
 									<div class="quantity">
@@ -134,7 +85,7 @@
 									<h5>Organic Bananas</h5>
 								</td>
 								<td class="shoping__cart__price">
-									69.00
+									69
 								</td>
 								<td class="shoping__cart__quantity">
 									<div class="quantity">
@@ -156,32 +107,17 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-12">
-				<div class="shoping__cart__btns">
-					<a href="#" class="primary-btn cart-btn">CONTINUE SHOPPING</a>
-					<a href="#" class="primary-btn cart-btn cart-btn-right"><span class="icon_loading"></span>
-						Mise à jour du panier</a>
-				</div>
-			</div>
 			<div class="col-lg-6">
-				<div class="shoping__continue">
-					<div class="shoping__discount">
-						<h5>Codes de réduction</h5>
-						<form action="#">
-							<input type="text" placeholder="Enter your coupon code">
-							<button type="submit" class="site-btn">APPLIQUER COUPON</button>
-						</form>
-					</div>
+				<div class="shoping__cart__btns">
+					<a href="./offres.php" class="primary-btn cart-btn">CONTINUER SHOPPING</a>
 				</div>
 			</div>
 			<div class="col-lg-6">
 				<div class="shoping__payement">
-					<h5>Cart Total</h5>
 					<ul>
-						<li>Subtotal <span>454.98</span></li>
-						<li>Total <span>454.98</span></li>
+						<li>Total commande <span>454.98</span></li>
 					</ul>
-					<a href="#" class="primary-btn">PASSER AU PAYEMENT</a>
+					<a href="./payement.php" class="primary-btn">PASSER AU PAYEMENT</a>
 				</div>
 			</div>
 		</div>
@@ -189,4 +125,4 @@
 </section>
 <!-- Shoping Cart Section End -->
 
-<?php require 'layouts/footer.php'; ?>
+<?php include 'layouts/footer.php'; ?>

@@ -1,53 +1,4 @@
-<?php require 'layouts/navbar.php'; ?>
-
-<!-- Hero Section Begin -->
-<section class="hero hero-normal">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-3">
-				<div class="hero__categories">
-					<div class="hero__categories__all">
-						<i class="fa fa-bars"></i>
-						<span>All departments</span>
-					</div>
-					<ul>
-						<li><a href="#">Fresh Meat</a></li>
-						<li><a href="#">Vegetables</a></li>
-						<li><a href="#">Fruit & Nut Gifts</a></li>
-						<li><a href="#">Fresh Berries</a></li>
-						<li><a href="#">Ocean Foods</a></li>
-						<li><a href="#">Butter & Eggs</a></li>
-						<li><a href="#">Fastfood</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-lg-9">
-				<div class="hero__search">
-					<div class="hero__search__form">
-						<form action="#">
-							<div class="hero__search__categories">
-								Toutes catégories
-								<span class="arrow_carrot-down"></span>
-							</div>
-							<input type="text" placeholder="Que voulez-vous ?">
-							<button type="submit" class="site-btn">RECHERCHER</button>
-						</form>
-					</div>
-					<div class="hero__search__phone">
-						<div class="hero__search__phone__icon">
-							<i class="fa fa-phone"></i>
-						</div>
-						<div class="hero__search__phone__text">
-							<h5>+65 11.188.888</h5>
-							<span>support 24/7 time</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- Hero Section End -->
+<?php include 'layouts/navbar.php'; ?>
 
 <!-- Breadcrumb Section Begin -->
 <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
@@ -80,9 +31,9 @@
 						</form>
 					</div>
 					<div class="actualite__sidebar__item">
-						<h4>Categories</h4>
+						<h4>Catégories</h4>
 						<ul>
-							<li><a href="#">All</a></li>
+							<li><a href="#">Tous</a></li>
 							<li><a href="#">Beauty (20)</a></li>
 							<li><a href="#">Food (5)</a></li>
 							<li><a href="#">Life Style (9)</a></li>
@@ -90,7 +41,7 @@
 						</ul>
 					</div>
 					<div class="actualite__sidebar__item">
-						<h4>Recent News</h4>
+						<h4>Les pépites</h4>
 						<div class="actualite__sidebar__recent">
 							<a href="#" class="actualite__sidebar__recent__item">
 								<div class="actualite__sidebar__recent__item__pic">
@@ -121,123 +72,27 @@
 							</a>
 						</div>
 					</div>
-					<div class="actualite__sidebar__item">
-						<h4>Search By</h4>
-						<div class="actualite__sidebar__item__tags">
-							<a href="#">Apple</a>
-							<a href="#">Beauty</a>
-							<a href="#">Vegetables</a>
-							<a href="#">Fruit</a>
-							<a href="#">Healthy Food</a>
-							<a href="#">Lifestyle</a>
-						</div>
-					</div>
 				</div>
 			</div>
 			<div class="col-lg-8 col-md-7">
 				<div class="row">
-					<div class="col-lg-6 col-md-6 col-sm-6">
-						<div class="actualite__item">
-							<div class="actualite__item__pic">
-								<img src="img/actualite/actualite-2.jpg" alt="">
-							</div>
-							<div class="actualite__item__text">
-								<ul>
-									<li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-									<li><i class="fa fa-comment-o"></i> 5</li>
-								</ul>
-								<h5><a href="#">6 ways to prepare breakfast for 30</a></h5>
-								<p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam
-									quaerat </p>
-								<a href="#" class="actualite__btn">READ MORE <span class="arrow_right"></span></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-6 col-sm-6">
-						<div class="actualite__item">
-							<div class="actualite__item__pic">
-								<img src="img/actualite/actualite-3.jpg" alt="">
-							</div>
-							<div class="actualite__item__text">
-								<ul>
-									<li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-									<li><i class="fa fa-comment-o"></i> 5</li>
-								</ul>
-								<h5><a href="#">Visit the clean farm in the US</a></h5>
-								<p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam
-									quaerat </p>
-								<a href="#" class="actualite__btn">READ MORE <span class="arrow_right"></span></a>
+					<?php while ($actualite = $getAllActualites->fetch()) { ?>
+						<div class="col-lg-6 col-md-6 col-sm-6">
+							<div class="actualite__item">
+								<div class="actualite__item__pic">
+									<img src="img/actualite/actualite-2.jpg" alt="">
+								</div>
+								<div class="actualite__item__text">
+									<ul>
+										<li><i class="fa fa-calendar-o"></i> <?= $actualite['date_actualite']; ?></li>
+									</ul>
+									<h5><a href="actualite-details.php"><?= $actualite['titre_actualite']; ?></a></h5>
+									<p><?= substr($actualite['contenu_actualite'], 0, 100) ; ?></p>
+									<a href="./actualite-details.php?id=<?= $actualite['id']; ?>" class="actualite__btn">LIRE PLUS<span class="arrow_right"></span></a>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-6 col-md-6 col-sm-6">
-						<div class="actualite__item">
-							<div class="actualite__item__pic">
-								<img src="img/actualite/actualite-1.jpg" alt="">
-							</div>
-							<div class="actualite__item__text">
-								<ul>
-									<li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-									<li><i class="fa fa-comment-o"></i> 5</li>
-								</ul>
-								<h5><a href="#">Cooking tips make cooking simple</a></h5>
-								<p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam
-									quaerat </p>
-								<a href="#" class="actualite__btn">READ MORE <span class="arrow_right"></span></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-6 col-sm-6">
-						<div class="actualite__item">
-							<div class="actualite__item__pic">
-								<img src="img/actualite/actualite-4.jpg" alt="">
-							</div>
-							<div class="actualite__item__text">
-								<ul>
-									<li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-									<li><i class="fa fa-comment-o"></i> 5</li>
-								</ul>
-								<h5><a href="#">Cooking tips make cooking simple</a></h5>
-								<p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam
-									quaerat </p>
-								<a href="#" class="actualite__btn">READ MORE <span class="arrow_right"></span></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-6 col-sm-6">
-						<div class="actualite__item">
-							<div class="actualite__item__pic">
-								<img src="img/actualite/actualite-4.jpg" alt="">
-							</div>
-							<div class="actualite__item__text">
-								<ul>
-									<li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-									<li><i class="fa fa-comment-o"></i> 5</li>
-								</ul>
-								<h5><a href="#">The Moment You Need To Remove Garlic From The Menu</a></h5>
-								<p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam
-									quaerat </p>
-								<a href="#" class="actualite__btn">READ MORE <span class="arrow_right"></span></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-6 col-sm-6">
-						<div class="actualite__item">
-							<div class="actualite__item__pic">
-								<img src="img/actualite/actualite-6.jpg" alt="">
-							</div>
-							<div class="actualite__item__text">
-								<ul>
-									<li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-									<li><i class="fa fa-comment-o"></i> 5</li>
-								</ul>
-								<h5><a href="#">Cooking tips make cooking simple</a></h5>
-								<p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam
-									quaerat </p>
-								<a href="#" class="actualite__btn">READ MORE <span class="arrow_right"></span></a>
-							</div>
-						</div>
-					</div>
+					<?php } ?>
 					<div class="col-lg-12">
 						<div class="product__pagination actualite__pagination">
 							<a href="#">1</a>
@@ -253,4 +108,4 @@
 </section>
 <!-- actualite Section End -->
 
-<?php require 'layouts/footer.php'; ?>
+<?php include 'layouts/footer.php'; ?>
