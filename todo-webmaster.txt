@@ -50,10 +50,6 @@ Design
 	Noir 20%
 
 Pages
-	Accueil
-	Actualités
-	Les offres
 	Contacts
-	Les boutiques
-	Administration
-		CRUD chaque table de la base de données
+	Nos magasins
+

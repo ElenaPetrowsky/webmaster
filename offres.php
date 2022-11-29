@@ -35,6 +35,9 @@ include 'layouts/navbar.php';
 							<li><a href="#">Boissons</a></li>
 							<li><a href="#">Electronique</a></li>
 							<li><a href="#">Mobilier</a></li>
+							<?php while ($categorie = $getAllCategories->fetch()) { ?>
+								<li><a href="#"><?= $categorie['libelle_categorie']; ?></a></li>
+							<?php } ?>
 						</ul>
 					</div>
 					<div class="sidebar__item">
@@ -64,22 +67,24 @@ include 'layouts/navbar.php';
 					<div class="row">
 						<!-- carousel des soldes -->
 						<div class="product__discount__slider owl-carousel">
-							<div class="col-lg-4">
-								<div class="product__discount__item">
-									<div class="product__discount__item__pic set-bg" data-setbg="img/product/discount/pd-1.jpg">
-										<div class="product__discount__percent">-20%</div>
-										<ul class="product__item__pic__hover">
-											<li><a href="#"><i class="fa fa-heart"></i></a></li>
-											<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-										</ul>
-									</div>
-									<div class="product__discount__item__text">
-										<span>Dried Fruit</span>
-										<h5><a href="./produit-details.php">Raisin’n’nuts</a></h5>
-										<div class="product__item__price">30 FCFA <span>36 FCFA</span></div>
+							<?php while ($solde = $getSoldes->fetch()) { ?>
+								<div class="col-lg-4">
+									<div class="product__discount__item">
+										<div class="product__discount__item__pic set-bg" data-setbg="img/product/discount/pd-1.jpg">
+											<div class="product__discount__percent">-<?= $solde['pourcentage']; ?> %</div>
+											<ul class="product__item__pic__hover">
+												<li><a href="#"><i class="fa fa-heart"></i></a></li>
+												<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+											</ul>
+										</div>
+										<div class="product__discount__item__text">
+											<span>Dried Fruit</span>
+											<h5><a href="./produit-details.php"><?= $solde['nom_produit']; ?></a></h5>
+											<div class="product__item__price"><?= $solde['prix_produit'] * (1 - $solde['pourcentage'] / 100) ; ?> FCFA <span><?= $solde['prix_produit']; ?> FCFA</span></div>
+										</div>
 									</div>
 								</div>
-							</div>
+							<?php } ?>
 						</div>
 						<!-- fin carousel -->
 					</div>

@@ -76,74 +76,23 @@
 			</div>
 			<div class="col-lg-8 col-md-7">
 				<div class="row">
-					<div class="col-lg-6 col-md-6 col-sm-6">
-						<div class="actualite__item">
-							<div class="actualite__item__pic">
-								<img src="img/actualite/actualite-2.jpg" alt="">
-							</div>
-							<div class="actualite__item__text">
-								<ul>
-									<li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-									<li><i class="fa fa-comment-o"></i> 5</li>
-								</ul>
-								<h5><a href="./actualite-details.php">6 ways to prepare breakfast for 30</a></h5>
-								<p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam
-									quaerat </p>
-								<a href="./actualite-details.php" class="actualite__btn">LIRE PLUS<span class="arrow_right"></span></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-6 col-sm-6">
-						<div class="actualite__item">
-							<div class="actualite__item__pic">
-								<img src="img/actualite/actualite-3.jpg" alt="">
-							</div>
-							<div class="actualite__item__text">
-								<ul>
-									<li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-									<li><i class="fa fa-comment-o"></i> 5</li>
-								</ul>
-								<h5><a href="./actualite-details.php">Visit the clean farm in the US</a></h5>
-								<p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam
-									quaerat </p>
-								<a href="./actualite-details.php" class="actualite__btn">LIRE PLUS<span class="arrow_right"></span></a>
+					<?php while ($actualite = $getAllActualites->fetch()) { ?>
+						<div class="col-lg-6 col-md-6 col-sm-6">
+							<div class="actualite__item">
+								<div class="actualite__item__pic">
+									<img src="img/actualite/actualite-2.jpg" alt="">
+								</div>
+								<div class="actualite__item__text">
+									<ul>
+										<li><i class="fa fa-calendar-o"></i> <?= $actualite['date_actualite']; ?></li>
+									</ul>
+									<h5><a href="actualite-details.php"><?= $actualite['titre_actualite']; ?></a></h5>
+									<p><?= substr($actualite['contenu_actualite'], 0, 100) ; ?></p>
+									<a href="./actualite-details.php?id=<?= $actualite['id']; ?>" class="actualite__btn">LIRE PLUS<span class="arrow_right"></span></a>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-6 col-md-6 col-sm-6">
-						<div class="actualite__item">
-							<div class="actualite__item__pic">
-								<img src="img/actualite/actualite-1.jpg" alt="">
-							</div>
-							<div class="actualite__item__text">
-								<ul>
-									<li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-									<li><i class="fa fa-comment-o"></i> 5</li>
-								</ul>
-								<h5><a href="./actualite-details.php">Cooking tips make cooking simple</a></h5>
-								<p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam
-									quaerat </p>
-								<a href="./actualite-details.php" class="actualite__btn">LIRE PLUS<span class="arrow_right"></span></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-6 col-sm-6">
-						<div class="actualite__item">
-							<div class="actualite__item__pic">
-								<img src="img/actualite/actualite-4.jpg" alt="">
-							</div>
-							<div class="actualite__item__text">
-								<ul>
-									<li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-									<li><i class="fa fa-comment-o"></i> 5</li>
-								</ul>
-								<h5><a href="./actualite-details.php">Cooking tips make cooking simple</a></h5>
-								<p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam
-									quaerat </p>
-								<a href="./actualite-details.php" class="actualite__btn">LIRE PLUS<span class="arrow_right"></span></a>
-							</div>
-						</div>
-					</div>
+					<?php } ?>
 					<div class="col-lg-12">
 						<div class="product__pagination actualite__pagination">
 							<a href="#">1</a>

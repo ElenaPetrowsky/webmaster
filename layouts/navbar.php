@@ -1,5 +1,5 @@
 <?php
-include 'controllers/showProductsAction.php';
+include 'controllers/requetesClient.php';
 ?>
 
 <!DOCTYPE html>
@@ -174,8 +174,16 @@ include 'controllers/showProductsAction.php';
 						</div>
 						<div class="header__cart">
 							<ul>
-								<li><a href="./favoris.php"><i class="fa fa-heart"></i> <span>1</span></a></li>
-								<li><a href="./panier.php"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+								<li>
+									<a href="./favoris.php">
+										<i class="fa fa-heart"></i> <span><?= 0 ?></span>
+									</a>
+								</li>
+								<li>
+									<a href="./panier.php">
+										<i class="fa fa-shopping-bag"></i> <span><?= $getCountCart->fetch()[0]; ?></span>
+									</a>
+								</li>
 							</ul>
 							<div class="header__cart__price">Total : <span>150 FCFA</span></div>
 						</div>

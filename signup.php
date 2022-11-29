@@ -1,5 +1,5 @@
 <?php
-include 'controllers/showProductsAction.php';
+include 'controllers/requetesClient.php';
 include 'layouts/navbar.php';
 ?>
 
