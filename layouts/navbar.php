@@ -1,3 +1,7 @@
+<?php
+include 'controllers/requetesClient.php';
+?>
+
 <!DOCTYPE html>
 <html lang="fr-FR">
 
@@ -9,7 +13,6 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap">
-
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/elegant-icons.css">
@@ -24,9 +27,9 @@
 
 <body>
 	<!-- Page Preloader -->
-	<div id="preloder">
+	<!-- <div id="preloder">
 		<div class="loader"></div>
-	</div>
+	</div> -->
 
 	<!-- Humberger Begin -->
 	<div class="humberger__menu__overlay"></div>
@@ -39,7 +42,7 @@
 				<li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
 				<li><a href="./panier.php"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
 			</ul>
-			<div class="header__cart__price">Total : <span>150.00</span></div>
+			<div class="header__cart__price">Total : <span>150</span></div>
 		</div>
 		<div class="humberger__menu__widget">
 			<div class="header__top__right__auth">
@@ -49,17 +52,39 @@
 		<nav class="humberger__menu__nav mobile-menu">
 			<ul>
 				<li class="active"><a href="./index.php">Accueil</a></li>
-				<!-- <li><a href="./offres.php">Nos magasins</a></li> -->
-				<li><a href="./offres.php">Nos offres</a></li>
-				<li><a href="./actualite.php">Actualités</a></li>
-				<li><a href="./contact.php">Contacts</a></li>
-				<!-- <li><a href="#">Pages</a>
+				<li><a href="./about.php">Qui sommes-nous ?</a>
 					<ul class="header__menu__dropdown">
-						<li><a href="./panier.php">Shoping Cart</a></li>
-						<li><a href="./payement.php">Check Out</a></li>
-						<li><a href="./actualite-details.php">actualite Details</a></li>
+						<li><a href="./about.php#historique">Historique</a></li>
+						<li><a href="./about.php#organisation">Organisation</a></li>
+						<li><a href="./about.php#engagements">Nos engagements</a></li>
 					</ul>
-				</li> -->
+				</li>
+				<li><a href="./magasins.php">Nos magasins</a>
+					<ul class="header__menu__dropdown">
+						<li><a href="./magasins.php#gros">Magasins en gros</a></li>
+						<li><a href="./magasins.php#demi-gros">Magasins en demi-gros</a></li>
+						<li><a href="./magasins.php#details">Magasins en détails</a></li>
+					</ul>
+				</li>
+				<li><a href="./offres.php">Nos offres</a>
+					<ul class="header__menu__dropdown">
+						<li><a href="./offres.php">Produits</a></li>
+						<li><a href="./offres.php#livraisons">Livraisons</a></li>
+						<li><a href="./offres.php#promotions">Promotions</a></li>
+					</ul>
+				</li>
+				<li><a href="./actualite.php">Actualités</a>
+					<ul class="header__menu__dropdown">
+						<li><a href="./actualite.php#presse">Presse</a></li>
+						<li><a href="./actualite.php#multimedia">Multimédia</a></li>
+					</ul>
+				</li>
+				<li><a href="./contact.php">Contacts</a>
+					<ul class="header__menu__dropdown">
+						<li><a href="./contact.php#ressources-humaines">Ressources Humaines</a></li>
+						<li><a href="./contact.php#service-commercial">Service commercial</a></li>
+					</ul>
+				</li>
 			</ul>
 		</nav>
 		<div id="mobile-menu-wrap"></div>
@@ -72,35 +97,48 @@
 			<div class="row">
 				<div class="col-lg-3">
 					<div class="header__logo">
-						<a href="./index.php"><img src="img/logo.png" alt="Logo Webamster"></a>
+						<a href="./index.php"><img src="img/logo.png" alt="Logo Webmaster"></a>
 					</div>
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-9">
 					<nav class="header__menu">
 						<ul>
 							<li class="active"><a href="./index.php">Accueil</a></li>
-							<!-- <li><a href="./offres.php">Nos magasins</a></li> -->
-							<li><a href="./offres.php">Nos offres</a></li>
-							<li><a href="./actualite.php">Actualités</a></li>
-							<li><a href="./contact.php">Contacts</a></li>
-							<!-- <li><a href="#">Pages</a>
+							<li><a href="./about.php">Qui sommes-nous ?</a>
 								<ul class="header__menu__dropdown">
-									<li><a href="./panier.php">Shoping Cart</a></li>
-									<li><a href="./payement.php">Check Out</a></li>
-									<li><a href="./actualite-details.php">actualite Details</a></li>
+									<li><a href="./about.php#historique">Historique</a></li>
+									<li><a href="./about.php#organisation">Organisation</a></li>
+									<li><a href="./about.php#engagements">Nos engagements</a></li>
 								</ul>
-							</li> -->
+							</li>
+							<li><a href="./magasins.php">Nos magasins</a>
+								<ul class="header__menu__dropdown">
+									<li><a href="./magasins.php#gros">Magasins en gros</a></li>
+									<li><a href="./magasins.php#demi-gros">Magasins en demi-gros</a></li>
+									<li><a href="./magasins.php#details">Magasins en détails</a></li>
+								</ul>
+							</li>
+							<li><a href="./offres.php">Nos offres</a>
+								<ul class="header__menu__dropdown">
+									<li><a href="./offres.php">Produits</a></li>
+									<li><a href="./offres.php#livraisons">Livraisons</a></li>
+									<li><a href="./offres.php#promotions">Promotions</a></li>
+								</ul>
+							</li>
+							<li><a href="./actualite.php">Actualités</a>
+								<ul class="header__menu__dropdown">
+									<li><a href="./actualite.php#presse">Presse</a></li>
+									<li><a href="./actualite.php#multimedia">Multimédia</a></li>
+								</ul>
+							</li>
+							<li><a href="./contact.php">Contacts</a>
+								<ul class="header__menu__dropdown">
+									<li><a href="./contact.php#ressources-humaines">Ressources Humaines</a></li>
+									<li><a href="./contact.php#service-commercial">Service commercial</a></li>
+								</ul>
+							</li>
 						</ul>
 					</nav>
-				</div>
-				<div class="col-lg-3">
-					<div class="header__cart">
-						<ul>
-							<li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-							<li><a href="./panier.php"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
-						</ul>
-						<div class="header__cart__price">Total : <span>150.00</span></div>
-					</div>
 				</div>
 			</div>
 			<div class="humberger__open">
@@ -108,4 +146,50 @@
 			</div>
 		</div>
 	</header>
-	<!-- Header Section End -->
+
+	<!-- Hero Section Begin -->
+	<section class="hero hero-normal">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="hero__categories">
+						<div class="hero__categories__all">
+							<i class="fa fa-bars"></i>
+							<span>Catégories</span>
+						</div>
+						<ul>
+							<?php while ($categorie = $getAllCategories->fetch()) { ?>
+								<li><a href="#"><?= $categorie['libelle_categorie']; ?></a></li>
+							<?php } ?>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-9">
+					<div class="hero__search">
+						<div class="hero__search__form">
+							<form action="#">
+								<input type="text" placeholder="Que voulez-vous ?">
+								<button type="submit" class="site-btn">Rechercher</button>
+							</form>
+						</div>
+						<div class="header__cart">
+							<ul>
+								<li>
+									<a href="./favoris.php">
+										<i class="fa fa-heart"></i> <span><?= 0 ?></span>
+									</a>
+								</li>
+								<li>
+									<a href="./panier.php">
+										<i class="fa fa-shopping-bag"></i> <span><?= $getCountCart->fetch()[0]; ?></span>
+									</a>
+								</li>
+							</ul>
+							<div class="header__cart__price">Total : <span>150 FCFA</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Hero Section End -->

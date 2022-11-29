@@ -17,27 +17,27 @@
 				<div class="footer__widget">
 					<h6>Liens utiles</h6>
 					<ul>
-						<li><a href="#">Historique</a></li>
-						<li><a href="#">Organisation</a></li>
-						<li><a href="#">Nos engagements</a></li>
+						<li><a href="./about.php#historique">Historique</a></li>
+						<li><a href="./about.php#organisation">Organisation</a></li>
+						<li><a href="./about.php#engagements">Nos engagements</a></li>
 					</ul>
 					<ul>
-						<li><a href="#">Nos magasins en gros</a></li>
-						<li><a href="#">Nos magasins en demi-gros</a></li>
-						<li><a href="#">Nos magasins en détails</a></li>
+						<li><a href="./magasins#gros">Nos magasins en gros</a></li>
+						<li><a href="./magasins#demi-gros">Nos magasins en demi-gros</a></li>
+						<li><a href="./magasins#details">Nos magasins en détails</a></li>
 					</ul>
 					<ul>
-						<li><a href="#">Produits</a></li>
-						<li><a href="#">Livraisons</a></li>
-						<li><a href="#">Promotions</a></li>
+						<li><a href="./offres.php">Produits</a></li>
+						<li><a href="./offres.php#livraisons">Livraisons</a></li>
+						<li><a href="./offres.php#promotions">Promotions</a></li>
 					</ul>
 					<ul>
-						<li><a href="#">Presse</a></li>
-						<li><a href="#">Multimédia</a></li>
+						<li><a href="./blog.php#presse">Presse</a></li>
+						<li><a href="./blog.php#multimedia">Multimédia</a></li>
 					</ul>
 					<ul>
-						<li><a href="#">Ressources Humaines</a></li>
-						<li><a href="#">Service Commercial</a></li>
+						<li><a href="./contact.php#ressources-humaines">Ressources Humaines</a></li>
+						<li><a href="./contact.php#service-commercial">Service Commercial</a></li>
 					</ul>
 				</div>
 			</div>
@@ -66,7 +66,8 @@
 <script src="js/jquery.slicknav.js"></script>
 <script src="js/mixitup.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
-<script src="js/main.js"></script>
+<script src="js/offres.js"></script>
+<script src="js/alpine.js"></script>
 
 </body>
 
