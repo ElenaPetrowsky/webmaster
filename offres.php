@@ -1,5 +1,5 @@
 <?php
-require 'layouts/navbar.php';
+include 'layouts/navbar.php';
 ?>
 
 <!-- Breadcrumb Section Begin -->
@@ -40,7 +40,7 @@ require 'layouts/navbar.php';
 					<div class="sidebar__item">
 						<h4>Prix</h4>
 						<div class="price-range-wrap">
-							<div class="price-range ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" data-min="10" data-max="540">
+							<div class="price-range ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" data-min="<?= $getMinProducts->fetch()[0] ?>" data-max="<?= $getMaxProducts->fetch()[0] ?>">
 								<div class="ui-slider-range ui-corner-all ui-widget-header"></div>
 								<span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span>
 								<span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span>
@@ -147,4 +147,4 @@ require 'layouts/navbar.php';
 </section>
 <!-- Product Section End -->
 
-<?php require 'layouts/footer.php'; ?>
+<?php include 'layouts/footer.php'; ?>

@@ -1,5 +1,5 @@
 <?php
-require 'controllers/showProductContentAction.php';
+include 'controllers/showProductContentAction.php';
 
 if (isset($_POST['validate'])) {
 

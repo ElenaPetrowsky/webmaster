@@ -30,7 +30,7 @@ include '../controllers/updateClientAction.php';
 								<div class="form-group row">
 									<label class="col-lg-2 col-form-label" for="client">Client</label>
 									<div class="col-lg-10">
-										<input required type="text" class="form-control" id="client" name="client" value="<?= $commandeInfos["id_client"] ?>">
+										<input included type="text" class="form-control" id="client" name="client" value="<?= $commandeInfos["id_client"] ?>">
 									</div>
 								</div>
 								<div class="form-group row">
@@ -46,7 +46,7 @@ include '../controllers/updateClientAction.php';
 								<div class="form-group row">
 									<label class="col-lg-2 col-form-label" for="photo">Photo</label>
 									<div class="col-lg-10">
-										<input required type="file" class="form-control" id="photo" name="photo">
+										<input included type="file" class="form-control" id="photo" name="photo">
 									</div>
 								</div>
 								<button type="submit" class="btn btn-primary" name="validate">Enregistrer</button>
@@ -63,4 +63,4 @@ include '../controllers/updateClientAction.php';
 
 </div>
 
-<?php require '../../layouts/admin-bas.php'; ?>
+<?php include '../../layouts/admin-bas.php'; ?>

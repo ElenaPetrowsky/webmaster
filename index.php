@@ -1,5 +1,5 @@
 <?php
-require 'layouts/navbar.php';
+include 'layouts/navbar.php';
 ?>
 
 <!-- Hero Section Begin -->
@@ -464,4 +464,4 @@ require 'layouts/navbar.php';
 </section>
 <!-- actualite Section End -->
 
-<?php require 'layouts/footer.php'; ?>
+<?php include 'layouts/footer.php'; ?>

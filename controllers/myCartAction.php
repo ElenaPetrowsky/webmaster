@@ -1,5 +1,5 @@
 <?php
-require 'controllers/database.php';
+include 'controllers/database.php';
 
 $getMyProducts = $BDD->prepare(
 	"SELECT nom_produit, prix_produit, quantite

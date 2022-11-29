@@ -1,6 +1,6 @@
 <?php
-require 'controllers/showProductsAction.php';
-require 'layouts/navbar.php';
+include 'controllers/showProductsAction.php';
+include 'layouts/navbar.php';
 ?>
 
 <div class="container">
@@ -29,4 +29,4 @@ require 'layouts/navbar.php';
 	</form>
 </div>
 
-<?php require 'layouts/footer.php'; ?>
+<?php include 'layouts/footer.php'; ?>

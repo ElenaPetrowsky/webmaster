@@ -1,5 +1,5 @@
 <?php
-// require 'controllers/database.php';
+// include 'controllers/database.php';
 
 if (isset($_GET['id']) && !empty($_GET['id'])) {
 

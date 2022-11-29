@@ -31,25 +31,25 @@ include '../controllers/updateClientAction.php';
 									<div class="form-group row">
 										<label class="col-lg-2 col-form-label" for="nom">Nom</label>
 										<div class="col-lg-10">
-											<input required type="text" class="form-control" id="nom" name="nom" value="<?= $clientInfos["nom_client"] ?>">
+											<input included type="text" class="form-control" id="nom" name="nom" value="<?= $clientInfos["nom_client"] ?>">
 										</div>
 									</div>
 									<div class="form-group row">
 										<label class="col-lg-2 col-form-label" for="prenoms">Prénoms</label>
 										<div class="col-lg-10">
-											<input required type="text" class="form-control" id="prenoms" name="prenoms" value="<?= $clientInfos["prenoms_client"] ?>">
+											<input included type="text" class="form-control" id="prenoms" name="prenoms" value="<?= $clientInfos["prenoms_client"] ?>">
 										</div>
 									</div>
 									<div class="form-group row">
 										<label class="col-lg-2 col-form-label" for="email">Email</label>
 										<div class="col-lg-10">
-											<input required type="email" class="form-control" id="email" name="email" value="<?= $clientInfos["email_client"] ?>">
+											<input included type="email" class="form-control" id="email" name="email" value="<?= $clientInfos["email_client"] ?>">
 										</div>
 									</div>
 									<div class="form-group row">
 										<label class="col-lg-2 col-form-label" for="contact">Téléphone</label>
 										<div class="col-lg-10">
-											<input required type="tel" name="contact" class="form-control" id="contact" placeholder="0748502093" pattern="[0-9]{10}" value="<?= $clientInfos["contact_client"] ?>">
+											<input included type="tel" name="contact" class="form-control" id="contact" placeholder="0748502093" pattern="[0-9]{10}" value="<?= $clientInfos["contact_client"] ?>">
 										</div>
 									</div>
 									<button type="submit" class="btn btn-primary modification" name="validate">Modifier</button>
@@ -65,4 +65,4 @@ include '../controllers/updateClientAction.php';
 
 </div>
 
-<?php require '../../layouts/admin-bas.php'; ?>
+<?php include '../../layouts/admin-bas.php'; ?>

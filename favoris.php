@@ -1,5 +1,5 @@
-<?php require 'layouts/navbar.php'; ?>
+<?php include 'layouts/navbar.php'; ?>
 
 
 
-<?php require 'layouts/footer.php'; ?>
+<?php include 'layouts/footer.php'; ?>

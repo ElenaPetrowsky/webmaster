@@ -1,4 +1,4 @@
-<?php require '../../layouts/admin-haut.php'; ?>
+<?php include '../../layouts/admin-haut.php'; ?>
 
 <div class="container-fluid">
 	<div class="row">
@@ -26,7 +26,7 @@
 								<div class="form-group row">
 									<label class="col-lg-2 col-form-label" for="client">Client</label>
 									<div class="col-lg-10">
-										<input required type="text" class="form-control" id="client" name="client">
+										<input included type="text" class="form-control" id="client" name="client">
 									</div>
 								</div>
 								<div class="form-group row">
@@ -42,7 +42,7 @@
 								<div class="form-group row">
 									<label class="col-lg-2 col-form-label" for="photo">Photo</label>
 									<div class="col-lg-10">
-										<input required type="file" class="form-control" id="photo" name="photo">
+										<input included type="file" class="form-control" id="photo" name="photo">
 									</div>
 								</div>
 								<button type="submit" class="btn btn-primary" name="validate">Enregistrer</button>
@@ -57,4 +57,4 @@
 
 </div>
 
-<?php require '../../layouts/admin-bas.php'; ?>
+<?php include '../../layouts/admin-bas.php'; ?>

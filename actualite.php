@@ -1,4 +1,4 @@
-<?php require 'layouts/navbar.php'; ?>
+<?php include 'layouts/navbar.php'; ?>
 
 <!-- Breadcrumb Section Begin -->
 <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
@@ -159,4 +159,4 @@
 </section>
 <!-- actualite Section End -->
 
-<?php require 'layouts/footer.php'; ?>
+<?php include 'layouts/footer.php'; ?>

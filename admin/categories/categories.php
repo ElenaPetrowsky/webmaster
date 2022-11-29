@@ -58,4 +58,4 @@ include '../controllers/requetesAdmin.php';
 	</div>
 </div>
 
-<?php require '../../layouts/admin-bas.php'; ?>
+<?php include '../../layouts/admin-bas.php'; ?>

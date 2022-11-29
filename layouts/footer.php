@@ -67,6 +67,7 @@
 <script src="js/mixitup.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/offres.js"></script>
+<script src="js/alpine.js"></script>
 
 </body>
 

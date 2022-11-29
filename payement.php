@@ -1,4 +1,4 @@
-<?php require 'layouts/navbar.php'; ?>
+<?php include 'layouts/navbar.php'; ?>
 
 <!-- Hero Section Begin -->
 <section class="hero hero-normal">
@@ -132,4 +132,4 @@
 </section>
 <!-- payement Section End -->
 
-<?php require 'layouts/footer.php'; ?>
+<?php include 'layouts/footer.php'; ?>

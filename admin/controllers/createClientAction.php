@@ -1,5 +1,5 @@
 <?php
-require 'database.php';
+include 'database.php';
 
 // Validation du formulaire
 if (isset($_POST['validate'])) {

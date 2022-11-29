@@ -1,6 +1,6 @@
 <?php
-require 'layouts/navbar.php';
-require 'controllers/showProductContentAction.php';
+include 'layouts/navbar.php';
+include 'controllers/showProductContentAction.php';
 ?>
 
 <!-- Breadcrumb Section Begin -->
@@ -100,4 +100,4 @@ require 'controllers/showProductContentAction.php';
 </section>
 <!-- Related Product Section End -->
 
-<?php require 'layouts/footer.php'; ?>
+<?php include 'layouts/footer.php'; ?>

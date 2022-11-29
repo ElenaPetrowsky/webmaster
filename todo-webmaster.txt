@@ -4,6 +4,10 @@ Authentification
 	Connexion
 	Déconnexion
 
+Ajout de favoris
+Ajout de produits dans un panier
+Panier dynamique
+Gestion des images
 Payement avec l'API de Paypal
 
 Base de données

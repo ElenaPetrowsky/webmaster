@@ -30,7 +30,7 @@ include '../controllers/updateCategorieAction.php';
 								<div class="form-group row">
 									<label class="col-lg-2 col-form-label" for="nom">Nom de la catégorie</label>
 									<div class="col-lg-10">
-										<input required type="text" class="form-control" id="nom" name="nom" value="<?= $categorieInfos["libelle_categorie"] ?>">
+										<input included type="text" class="form-control" id="nom" name="nom" value="<?= $categorieInfos["libelle_categorie"] ?>">
 									</div>
 								</div>
 								<div class="form-group row">
@@ -52,4 +52,4 @@ include '../controllers/updateCategorieAction.php';
 
 </div>
 
-<?php require '../../layouts/admin-bas.php'; ?>
+<?php include '../../layouts/admin-bas.php'; ?>

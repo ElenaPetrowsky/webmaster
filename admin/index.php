@@ -1,6 +1,6 @@
 <?php 
-require 'controllers/requetesAdmin.php';
-require '../layouts/admin-haut.php'; 
+include 'controllers/requetesAdmin.php';
+include '../layouts/admin-haut.php'; 
 ?>
 
 <div class="container-fluid">
@@ -61,4 +61,4 @@ require '../layouts/admin-haut.php';
 	</div>
 </div>
 
-<?php require '../layouts/admin-bas.php' ?>
+<?php include '../layouts/admin-bas.php' ?>

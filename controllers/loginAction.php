@@ -1,5 +1,5 @@
 <?php
-require 'controllers/database.php';
+// include 'controllers/database.php';
 
 // Validation du formulaire
 if (isset($_POST['validate'])) {
@@ -28,14 +28,14 @@ if (isset($_POST['validate'])) {
 				$_SESSION['contact_client'] = $clientInfos['contact_client'];
 
 				// Aller à la page d'accueil
-				header('Location: index.php');
+				// header('Location: index.php');
 			} else {
-				$error = "Votre mot de passe est incorrect";
+				echo "Votre mot de passe est incorrect";
 			}
 		} else {
-			$error = "Votre email est incorrect";
+			echo "Votre email est incorrect";
 		}
 	} else {
-		$error = "Veuiller compléter tous les champs svp ...";
+		echo "Veuiller compléter tous les champs svp ...";
 	}
 }
