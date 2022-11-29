@@ -2,10 +2,10 @@
 	require 'layouts/navbar.php'; 
 	require_once 'config/Database.php';
 	require_once 'Models/article.php';
+
 	$database = new Database();	
 	$db = $database->getConnection();
 	$article = new Article($db);
-
 	$produits = [];
 	$pdoStmt = $article->lire();
 ?>
