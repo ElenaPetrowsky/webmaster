@@ -19,14 +19,14 @@ if (isset($_POST['validate'])) {
 
 			// Insérer l'utilisateur dans la base de données
 			$insertUserOnWebsite = $BDD->prepare(
-				"INSERT INTO clients(nom_client, prenoms_client, email_client, contact_client, motdepasse_client) VALUES(?, ?, ?, ?, ?)"
+				"INSERT INTO clients(nom_client, prenoms_client, email_client, motdepasse_client, contact_client) VALUES(?, ?, ?, ?, ?)"
 			);
 			$insertUserOnWebsite->execute([
 				$nom_client,
 				$prenoms_client,
 				$email_client,
+				$motdepasse_client,
 				$contact_client,
-				$motdepasse_client
 			]);
 		}
 		$success = "Votre produit a bien été ajouté";

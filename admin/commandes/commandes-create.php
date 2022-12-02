@@ -20,13 +20,13 @@
 						<h4 class="header-title mt-0 mb-1">Ajout d'une commande</h4>
 					</div>
 
-					<form method="post" action="">
+					<form method="post">
 						<div class="row">
 							<div class="col">
 								<div class="form-group row">
 									<label class="col-lg-2 col-form-label" for="client">Client</label>
 									<div class="col-lg-10">
-										<input included type="text" class="form-control" id="client" name="client">
+										<input required type="text" class="form-control" id="client" name="client">
 									</div>
 								</div>
 								<div class="form-group row">
@@ -42,7 +42,7 @@
 								<div class="form-group row">
 									<label class="col-lg-2 col-form-label" for="photo">Photo</label>
 									<div class="col-lg-10">
-										<input included type="file" class="form-control" id="photo" name="photo">
+										<input required type="file" class="form-control" id="photo" name="photo">
 									</div>
 								</div>
 								<button type="submit" class="btn btn-primary" name="validate">Enregistrer</button>
