@@ -2,7 +2,95 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7b17299-7e8c-463c-8cd5-cd8d6f5c2d4e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/commande/panier.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Client.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/article.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/categorie.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/categorie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/commande.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/commande.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/about.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actualite-details.php" beforeDir="false" afterPath="$PROJECT_DIR$/actualite-details.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actualite.php" beforeDir="false" afterPath="$PROJECT_DIR$/actualite.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/categories/categories-create.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/categories/categories-create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/categories/categories-edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/categories/categories-edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/categories/categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/categories/categories.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/categories/deleteCategorieAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/categories/deleteCategorieAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/clients/clients-create.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/clients/clients-create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/clients/clients-edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/clients/clients-edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/clients/clients.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/clients/clients.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/clients/deleteClientAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/clients/deleteClientAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/commandes/commandes-create.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/commandes/commandes-create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/commandes/commandes-edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/commandes/commandes-edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/commandes/commandes.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/commandes/commandes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/commandes/deleteCommandeAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/commandes/deleteCommandeAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controllers/createCategorieAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controllers/createCategorieAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controllers/createClientAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controllers/createClientAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controllers/createCommandeAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controllers/createCommandeAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controllers/createProductAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controllers/createProductAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controllers/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controllers/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controllers/readCategorieAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controllers/readCategorieAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controllers/readClientAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controllers/readClientAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controllers/readCommandeAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controllers/readCommandeAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controllers/readProductAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controllers/readProductAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controllers/requetesAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controllers/requetesAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controllers/updateCategorieAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controllers/updateCategorieAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controllers/updateClientAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controllers/updateClientAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controllers/updateCommandeAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controllers/updateCommandeAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controllers/updateProductAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controllers/updateProductAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/produits/deleteProductAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/produits/deleteProductAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/produits/produits-create.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/produits/produits-create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/produits/produits-edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/produits/produits-edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/produits/produits.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/produits/produits.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/Database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/loginAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/loginAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/myCartAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/myCartAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/publishAnswerAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/publishAnswerAction.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/requetesClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/requetesClient.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/securityAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/securityAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/showActualiteContentAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/showActualiteContentAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/showAllAnswersFromProductAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/showAllAnswersFromProductAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/showProductContentAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/showProductContentAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/showUserProfileAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/showUserProfileAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/signupAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/signupAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/elegant-icons.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/elegant-icons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/font-awesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/jquery-ui.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/nice-select.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/nice-select.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/favoris.php" beforeDir="false" afterPath="$PROJECT_DIR$/favoris.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/ElegantIcons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/fonts/ElegantIcons.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/alpine.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/alpine.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/datatable-french.json" beforeDir="false" afterPath="$PROJECT_DIR$/js/datatable-french.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery-3.3.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery-3.3.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery-ui.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery.slicknav.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery.slicknav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/mixitup.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/mixitup.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/offres.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/offres.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/owl.carousel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/owl.carousel.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/vendor.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/vendor.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/admin-bas.php" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/admin-bas.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/admin-haut.php" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/admin-haut.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/magasins.php" beforeDir="false" afterPath="$PROJECT_DIR$/magasins.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offres.php" beforeDir="false" afterPath="$PROJECT_DIR$/offres.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panier.php" beforeDir="false" afterPath="$PROJECT_DIR$/panier.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payement.php" beforeDir="false" afterPath="$PROJECT_DIR$/payement.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/produit-details.php" beforeDir="false" afterPath="$PROJECT_DIR$/produit-details.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo-webmaster.txt" beforeDir="false" afterPath="$PROJECT_DIR$/todo-webmaster.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +114,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -36,11 +125,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669928648095</updated>
-      <workItem from="1669928649387" duration="767000" />
+      <workItem from="1669928649387" duration="3366000" />
+      <workItem from="1669992128333" duration="1265000" />
+      <workItem from="1670584712426" duration="944000" />
+      <workItem from="1670585959571" duration="361000" />
+      <workItem from="1670586587624" duration="1039000" />
+      <workItem from="1670587849844" duration="10920000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

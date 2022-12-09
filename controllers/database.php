@@ -9,7 +9,9 @@ $options =
 	];
 
 try {
-	session_start();
+    if(session_id() == '') {
+        session_start();
+    }
 	$BDD = new PDO($DB_DSN, $DB_USER, $DB_PASS, $options);
 } catch (PDOException $pe) {
 	echo "Erreur : " . $pe->getMessage();
