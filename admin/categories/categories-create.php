@@ -26,13 +26,13 @@
 								<div class="form-group row">
 									<label class="col-lg-2 col-form-label" for="nom">Nom de la catégorie</label>
 									<div class="col-lg-10">
-										<input included type="text" class="form-control" id="nom" name="nom">
+										<input required type="text" class="form-control" id="nom" name="nom">
 									</div>
 								</div>
 								<div class="form-group row">
 									<label class="col-lg-2 col-form-label" for="photo">Photo</label>
 									<div class="col-lg-10">
-										<input included type="file" class="form-control" id="photo" name="photo">
+										<input required type="file" class="form-control" id="photo" name="photo">
 									</div>
 								</div>
 								<button type="submit" class="btn btn-primary" name="validate">Enregistrer</button>

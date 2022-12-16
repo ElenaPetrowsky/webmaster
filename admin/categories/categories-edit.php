@@ -30,7 +30,7 @@ include '../controllers/updateCategorieAction.php';
 								<div class="form-group row">
 									<label class="col-lg-2 col-form-label" for="nom">Nom de la catégorie</label>
 									<div class="col-lg-10">
-										<input included type="text" class="form-control" id="nom" name="nom" value="<?= $categorieInfos["libelle_categorie"] ?>">
+										<input required type="text" class="form-control" id="nom" name="nom" value="<?= $categorieInfos["libelle_categorie"] ?>">
 									</div>
 								</div>
 								<div class="form-group row">

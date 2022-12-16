@@ -2884,8 +2884,8 @@ ol {
 }
 /* formulaire d'authentification */
 form.auth {
-	margin: auto !important; 
-	padding: 50px;
+	/* margin: auto !important;  */
+	/* padding: 50px; */
 }
 .auth .input-form {
 	display: flex;

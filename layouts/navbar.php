@@ -1,5 +1,8 @@
 <?php
 include 'controllers/requetesClient.php';
+if(session_id() == '') {
+    session_start();
+}
 ?>
 
 <!DOCTYPE html>
@@ -14,6 +17,7 @@ include 'controllers/requetesClient.php';
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/elegant-icons.css">
 	<link rel="stylesheet" href="css/nice-select.css">
@@ -21,6 +25,7 @@ include 'controllers/requetesClient.php';
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/slicknav.min.css">
 	<link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
 
 	<title>Projet Webmaster</title>
 </head>
@@ -35,7 +40,7 @@ include 'controllers/requetesClient.php';
 	<div class="humberger__menu__overlay"></div>
 	<div class="humberger__menu__wrapper">
 		<div class="humberger__menu__logo">
-			<a href="./index.php"><img src="img/logo.png" alt="Logo Webmaster"></a>
+			<a href="./index.php"><img src="img/Image1.png" alt="Logo Webmaster"></a>
 		</div>
 		<div class="humberger__menu__cart">
 			<ul>
@@ -97,7 +102,7 @@ include 'controllers/requetesClient.php';
 			<div class="row">
 				<div class="col-lg-3">
 					<div class="header__logo">
-						<a href="./index.php"><img src="img/logo.png" alt="Logo Webmaster"></a>
+						<a href="./index.php"><img src="img/Image1.png" alt="Logo Webmaster" width="200px"></a>
 					</div>
 				</div>
 				<div class="col-lg-9">
@@ -172,21 +177,34 @@ include 'controllers/requetesClient.php';
 								<button type="submit" class="site-btn">Rechercher</button>
 							</form>
 						</div>
-						<div class="header__cart">
-							<ul>
-								<li>
-									<a href="./favoris.php">
-										<i class="fa fa-heart"></i> <span><?= 0 ?></span>
-									</a>
-								</li>
-								<li>
-									<a href="./panier.php">
-										<i class="fa fa-shopping-bag"></i> <span><?= $getCountCart->fetch()[0]; ?></span>
-									</a>
-								</li>
-							</ul>
-							<div class="header__cart__price">Total : <span>150 FCFA</span></div>
-						</div>
+                        <div class="header__cart">
+                            <ul>
+                                <li>
+                                    <a href="./favoris.php">
+                                        <i class="fa fa-heart"></i> <span><?= 0 ?></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./panier.php">
+                                        <i  class="fa fa-shopping-bag"></i> <span id="nb_produit"><?php
+                                            if (isset($_SESSION["produit"])) echo count($_SESSION["produit"]); else echo 0;
+                                            ?></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="header__cart__price">Total : <span id="total_panier"><?php
+                                    if(isset($_SESSION["prix_pr"])) echo ($_SESSION["prix_pr"]); else echo  0;
+                                    ?> FCFA</span></div>
+                        </div>
+
+						<?php if (isset($_SESSION['auth'])) { ?>
+
+						<?php } else { ?>
+							<div class="hero__search">
+								<a class="site-btn" href="./login.php">Connexion</a>
+							</div>
+						<?php } ?>
+
 					</div>
 				</div>
 			</div>

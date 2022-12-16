@@ -4,7 +4,7 @@
 			<div class="col-lg-3 col-md-6 col-sm-6">
 				<div class="footer__about">
 					<div class="footer__about__logo">
-						<a href="./index.php"><img src="img/logo.png" alt=""></a>
+						<a href="./index.php"><img src="img/Image1.png" alt="Logo Webmaster" width="200px"></a>
 					</div>
 					<ul>
 						<li>Adresse : Yamoussoukro, INPHB Centre</li>
@@ -59,7 +59,7 @@
 	</div>
 </footer>
 
-<script src="js/jquery-3.3.1.min.js"></script>
+
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.nice-select.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>

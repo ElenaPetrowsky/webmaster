@@ -29,13 +29,13 @@ include '../controllers/createProductAction.php';
 								<div class="form-group row">
 									<label class="col-lg-2 col-form-label" for="nom">Nom</label>
 									<div class="col-lg-10">
-										<input included type="text" class="form-control" id="nom" name="nom">
+										<input required type="text" class="form-control" id="nom" name="nom">
 									</div>
 								</div>
 								<div class="form-group row">
 									<label class="col-lg-2 col-form-label" for="prix">Prix</label>
 									<div class="col-lg-10">
-										<input included type="number" min="0" class="form-control" id="prix" name="prix">
+										<input required type="number" min="0" class="form-control" id="prix" name="prix">
 									</div>
 								</div>
 								<div class="form-group row">
@@ -57,7 +57,6 @@ include '../controllers/createProductAction.php';
 
 				</div>
 			</div>
-
 		</div>
 	</div>
 </div>

@@ -30,13 +30,13 @@ include '../controllers/updateProductAction.php';
 								<div class="form-group row">
 									<label class="col-lg-2 col-form-label" for="nom">Nom</label>
 									<div class="col-lg-10">
-										<input included type="text" class="form-control" id="nom" name="nom" value="<?= $productInfos["nom_produit"] ?>">
+										<input required type="text" class="form-control" id="nom" name="nom" value="<?= $productInfos["nom_produit"] ?>">
 									</div>
 								</div>
 								<div class="form-group row">
 									<label class="col-lg-2 col-form-label" for="prix">Prix</label>
 									<div class="col-lg-10">
-										<input included type="number" min="0" class="form-control" id="prix" name="prix" value="<?= $productInfos["prix_produit"] ?>">
+										<input required type="number" min="0" class="form-control" id="prix" name="prix" value="<?= $productInfos["prix_produit"] ?>">
 									</div>
 								</div>
 								<div class="form-group row">
