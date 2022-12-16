@@ -45,7 +45,7 @@ include 'controllers/showActualiteContentAction.php';
 						</ul>
 					</div>
 					<div class="actualite__sidebar__item">
-						<h4>Recent News</h4>
+						<h4>News</h4>
 						<div class="actualite__sidebar__recent">
 							<a href="#" class="actualite__sidebar__recent__item">
 								<div class="actualite__sidebar__recent__item__pic">
@@ -110,8 +110,8 @@ include 'controllers/showActualiteContentAction.php';
 						<div class="col-lg-6">
 							<div class="actualite__details__widget">
 								<ul>
-									<li><span>Categories:</span> Food</li>
-									<li><span>Tags:</span> All, Trending, Cooking, Healthy Food, Life Style</li>
+									<li><span>Catégories:</span> Food</li>
+									<li><span>Tags:</span> Tout, Trending, Cooking, Healthy Food, Life Style</li>
 								</ul>
 								<div class="actualite__details__social">
 									<a href="#"><i class="fa fa-facebook"></i></a>
@@ -136,7 +136,7 @@ include 'controllers/showActualiteContentAction.php';
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="section-title related-actualite-title">
-					<h2>Post You May Like</h2>
+					<h2>D'autres posts</h2>
 				</div>
 			</div>
 		</div>

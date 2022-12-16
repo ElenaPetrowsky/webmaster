@@ -40,7 +40,7 @@ if(session_id() == '') {
 	<div class="humberger__menu__overlay"></div>
 	<div class="humberger__menu__wrapper">
 		<div class="humberger__menu__logo">
-			<a href="./index.php"><img src="img/logo.png" alt="Logo Webmaster"></a>
+			<a href="./index.php"><img src="img/Image1.png" alt="Logo Webmaster"></a>
 		</div>
 		<div class="humberger__menu__cart">
 			<ul>
@@ -102,7 +102,7 @@ if(session_id() == '') {
 			<div class="row">
 				<div class="col-lg-3">
 					<div class="header__logo">
-						<a href="./index.php"><img src="img/logo.png" alt="Logo Webmaster"></a>
+						<a href="./index.php"><img src="img/Image1.png" alt="Logo Webmaster" width="200px"></a>
 					</div>
 				</div>
 				<div class="col-lg-9">
@@ -177,25 +177,34 @@ if(session_id() == '') {
 								<button type="submit" class="site-btn">Rechercher</button>
 							</form>
 						</div>
-						<div class="header__cart">
-							<ul>
-								<li>
-									<a href="./favoris.php">
-										<i class="fa fa-heart"></i> <span><?= 0 ?></span>
-									</a>
-								</li>
-								<li>
-									<a href="./panier.php">
-										<i  class="fa fa-shopping-bag"></i> <span id="nb_produit"><?php
+                        <div class="header__cart">
+                            <ul>
+                                <li>
+                                    <a href="./favoris.php">
+                                        <i class="fa fa-heart"></i> <span><?= 0 ?></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./panier.php">
+                                        <i  class="fa fa-shopping-bag"></i> <span id="nb_produit"><?php
                                             if (isset($_SESSION["produit"])) echo count($_SESSION["produit"]); else echo 0;
                                             ?></span>
-									</a>
-								</li>
-							</ul>
-							<div class="header__cart__price">Total : <span id="total_panier"><?php
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="header__cart__price">Total : <span id="total_panier"><?php
                                     if(isset($_SESSION["prix_pr"])) echo ($_SESSION["prix_pr"]); else echo  0;
                                     ?> FCFA</span></div>
-						</div>
+                        </div>
+
+						<?php if (isset($_SESSION['auth'])) { ?>
+
+						<?php } else { ?>
+							<div class="hero__search">
+								<a class="site-btn" href="./login.php">Connexion</a>
+							</div>
+						<?php } ?>
+
 					</div>
 				</div>
 			</div>

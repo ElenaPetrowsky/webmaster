@@ -3,7 +3,7 @@ include 'layouts/navbar.php';
 include 'controllers/loginAction.php'; 
 ?>
 
-<div class="container-fluid">
+<div class="container">
 	<form method="post" class="auth">
 
 		<div class="input-form">

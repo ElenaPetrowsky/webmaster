@@ -109,18 +109,18 @@ if (isset($_SESSION["produit"]) && count($_SESSION["produit"]) > 0) {
                                 <div class="payement__order__total">Total <span><?php if(isset($_SESSION["prix_pr"])) echo ($_SESSION["prix_pr"]); else echo  0;
                                         ?>FCFA</span></div>
                                 <div class="payement__input__checkbox">
-                                    <label for="payment">
+                                    <label hidden for="payment">
                                         J'ai lu les Conditions Générales de Vente du site
                                         <input type="checkbox" id="payment">
                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
                                 <br>
-                                <button type="submit" class="site-btn">VALIDER COMMANDE</button>
+                                <button id="but_valider"  class="site-btn">VALIDER COMMANDE</button>
                             </div>
                         </div>
                         <!-- Infos client -->
-                        <div class="col-lg-6 col-md-6">
+                        <div hidden class="col-lg-6 col-md-6">
                             <div class="input-form">
                                 <input type="text" name="nom" id="nom" placeholder=" ">
                                 <label for="nom">Nom client</label>
@@ -154,6 +154,46 @@ if (isset($_SESSION["produit"]) && count($_SESSION["produit"]) > 0) {
             </div>
         </div>
     </section>
+    <div class="modal fade" id="yesOrNoModal" tabindex="-1" role="dialog" aria-labelledby="yesOrNoModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="yesOrNoModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modal_content">
+
+                </div>
+                <div class="modal-footer">
+                    <button id="yes_click" type="button" class="btn btn-primary">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- payement Section End -->
+    <script>
+        $("#but_valider").click(function () {
+
+            $.ajax({
+                method: "POST",
+                url: window.location.origin + "/commande/panier.php?action=3",
+            })
+                .done(function (data) {
+
+                        $("#modal_content").text(data.message);
+                        $("#yesOrNoModal").modal("show");
+                });
+        })
+        $("#yes_click").click(function () {
+            window.location = window.location.origin;
+        });
+
+
+
+
+    </script>
 
 <?php include 'layouts/footer.php'; ?>

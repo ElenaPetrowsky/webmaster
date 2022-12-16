@@ -74,7 +74,7 @@ if (isset($_SESSION["produit"]) && count($_SESSION["produit"]) > 0) {
                                     </td>-->
 
                                     <td class="delete_pr shoping__cart__item__close">
-                                        <span class="id_pr" hidden><?php echo($k)?></span>
+                                        <span class="id_pr" hidden><?php echo($k) ?></span>
                                         <span class="icon_close"></span>
                                     </td>
                                 </tr>
@@ -90,16 +90,18 @@ if (isset($_SESSION["produit"]) && count($_SESSION["produit"]) > 0) {
                         <a href="./offres.php" class="primary-btn cart-btn">CONTINUER SHOPPING</a>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="shoping__payement">
-                        <ul>
-                            <li>Total commande
-                                <span><?php if (isset($_SESSION["prix_pr"])) echo($_SESSION["prix_pr"]); else echo 0;
-                                    ?> FCFA</span></li>
-                        </ul>
-                        <a href="./payement.php" class="primary-btn">PASSER AU PAYEMENT</a>
+                <?php if (isset($_SESSION["prix_pr"]) and $_SESSION["prix_pr"] > 0) { ?>
+                    <div class="col-lg-6">
+                        <div class="shoping__payement">
+                            <ul>
+                                <li>Total commande
+                                    <span><?php if (isset($_SESSION["prix_pr"])) echo($_SESSION["prix_pr"]); else echo 0;
+                                        ?> FCFA</span></li>
+                            </ul>
+                            <a href="./payement.php" class="primary-btn">PASSER AU PAYEMENT</a>
+                        </div>
                     </div>
-                </div>
+                <?php } ?>
             </div>
         </div>
     </section>
@@ -109,8 +111,8 @@ if (isset($_SESSION["produit"]) && count($_SESSION["produit"]) > 0) {
         $(".delete_pr").click(function () {
 
 
-           // console.log($(this).find(".id_pr").text());
-           deleteAuPanier($(this).find(".id_pr").text())
+            // console.log($(this).find(".id_pr").text());
+            deleteAuPanier($(this).find(".id_pr").text())
 
         });
 
